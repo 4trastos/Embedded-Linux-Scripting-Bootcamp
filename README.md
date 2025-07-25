@@ -120,10 +120,3 @@ Este proyecto está bajo la licencia MIT.
 
 **¡Feliz aprendizaje!**
 📬 Si tienes dudas o sugerencias, no dudes en abrir una issue o contactarme.
-
-```
-
----
-
-¿Quieres que te lo incluya en el proyecto automáticamente con la estructura final y empaquetado en `.zip` o `.tar.gz` para subir a GitHub?
-```
