@@ -1,0 +1,6 @@
+📝 Ejercicio 01 - Mostrar Fecha Actual
+
+Crea un script que muestre la fecha actual en formato: YYYY-MM-DD
+
+- Usa el comando `date`
+- Debe comenzar con `#!/bin/sh`

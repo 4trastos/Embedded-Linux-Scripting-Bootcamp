@@ -1,0 +1,10 @@
+🎯 Ejercicio 09 - Redirección a archivo
+
+Crea un script que reciba un string y lo guarde en `/tmp/output.txt`.
+
+📌 Requisitos:
+- Usa redirección: `>`
+
+✅ Ejemplo:
+$ ./ejer09.sh "hola mundo"
+(archivo /tmp/output.txt contiene "hola mundo")

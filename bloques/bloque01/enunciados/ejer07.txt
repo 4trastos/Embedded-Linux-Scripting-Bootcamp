@@ -1,0 +1,13 @@
+🎯 Ejercicio 07 - Lógica condicional
+
+Crea un script que diga si un número dado por argumento es par o impar.
+
+📌 Requisitos:
+- Usa `if` y operador módulo %
+
+✅ Ejemplo:
+$ ./ejer07.sh 4
+Even
+
+$ ./ejer07.sh 3
+Odd

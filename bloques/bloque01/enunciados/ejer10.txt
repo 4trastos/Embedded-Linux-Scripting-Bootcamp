@@ -1,0 +1,11 @@
+🎯 Ejercicio 10 - Permisos
+
+Crea un script que reciba un archivo y le otorgue permisos 755.
+
+📌 Requisitos:
+- Usa `chmod 755`
+
+✅ Ejemplo:
+$ ./ejer10.sh /tmp/archivo.txt
+$ stat -c "%a" /tmp/archivo.txt
+755

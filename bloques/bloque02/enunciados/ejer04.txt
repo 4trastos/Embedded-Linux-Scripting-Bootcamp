@@ -1,0 +1,7 @@
+📝 Ejercicio 04 - Contar Líneas de un Archivo
+
+Crea un script que reciba un nombre de archivo como argumento y muestre el número de líneas que tiene.
+
+- Usa `wc -l`
+- Debe comprobar que el archivo existe
+- Debe comenzar con `#!/bin/sh`

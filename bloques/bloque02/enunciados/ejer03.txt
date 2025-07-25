@@ -1,0 +1,6 @@
+📝 Ejercicio 03 - Listar Archivos Ocultos
+
+Crea un script que liste solo los archivos ocultos en el directorio actual.
+
+- Usa `ls` con los flags adecuados
+- Debe comenzar con `#!/bin/sh`

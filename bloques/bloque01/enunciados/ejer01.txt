@@ -1,0 +1,5 @@
+📝 Ejercicio 01 - Hello Embedded
+
+Crea un script que imprima exactamente: Hello Embedded Linux!
+- Usa solo `echo`
+- Debe comenzar con `#!/bin/sh`

@@ -1,0 +1,13 @@
+🎯 Ejercicio 08 - Bucle for
+
+Crea un script que imprima los números del 1 al 5, uno por línea.
+
+📌 Requisitos:
+- Usa `for i in ...`
+
+✅ Output esperado:
+1
+2
+3
+4
+5

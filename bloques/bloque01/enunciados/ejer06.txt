@@ -1,0 +1,10 @@
+🎯 Ejercicio 06 - Códigos de salida
+
+Crea un script que reciba un nombre de usuario. Si existe en el sistema, devuelve exit 0; si no existe, devuelve exit 1.
+
+📌 Requisitos:
+- Usa `id <usuario>` o `getent passwd`
+
+✅ Ejemplo:
+$ ./ejer06.sh root → exit 0
+$ ./ejer06.sh inexistente → exit 1

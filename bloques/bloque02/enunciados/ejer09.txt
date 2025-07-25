@@ -1,0 +1,6 @@
+📝 Ejercicio 09 - Mostrar Uso de Disco
+
+Crea un script que muestre el uso del disco en formato legible.
+
+- Usa `df -h`
+- Debe comenzar con `#!/bin/sh`

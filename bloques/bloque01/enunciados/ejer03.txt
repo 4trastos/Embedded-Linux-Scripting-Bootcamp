@@ -1,0 +1,10 @@
+🎯 Ejercicio 03 - Variables simples
+
+Crea un script que defina una variable NAME con valor "Linux" y luego imprima: I love Linux
+
+📌 Requisitos:
+- Usar variables con = sin espacios
+- Usar echo para imprimir
+
+✅ Output esperado:
+I love Linux

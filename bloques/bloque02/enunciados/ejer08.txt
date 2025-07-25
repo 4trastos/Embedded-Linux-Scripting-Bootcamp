@@ -1,0 +1,6 @@
+📝 Ejercicio 08 - Convertir Texto a Mayúsculas
+
+Crea un script que reciba un texto como argumento y lo muestre en mayúsculas.
+
+- Usa `tr`
+- Debe comenzar con `#!/bin/sh`

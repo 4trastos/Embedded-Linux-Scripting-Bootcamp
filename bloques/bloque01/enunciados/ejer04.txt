@@ -1,0 +1,11 @@
+🎯 Ejercicio 04 - Entrada por teclado
+
+Crea un script que lea un nombre desde teclado (stdin) y diga: Hello, <nombre>
+
+📌 Requisitos:
+- Usa el comando `read`
+- Usa `echo` para la respuesta
+
+✅ Ejemplo:
+$ echo Ada | ./ejer04.sh
+Hello, Ada

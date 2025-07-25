@@ -1,0 +1,11 @@
+🎯 Ejercicio 02 - Mostrar versión del kernel
+
+Crea un script que muestre la versión actual del kernel de Linux.
+
+📌 Requisitos:
+- El script debe usar el comando `uname -r`
+- Debe imprimirse exactamente la versión (sin texto adicional)
+
+✅ Ejemplo:
+$ ./ejer02.sh
+5.15.0-105-generic

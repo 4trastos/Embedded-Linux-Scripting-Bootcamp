@@ -1,0 +1,11 @@
+🎯 Ejercicio 05 - Argumentos de entrada
+
+Crea un script que reciba un argumento y lo imprima como:
+Argument: <valor>
+
+📌 Requisitos:
+- Usa $1 para leer el argumento
+
+✅ Ejemplo:
+$ ./ejer05.sh test
+Argument: test

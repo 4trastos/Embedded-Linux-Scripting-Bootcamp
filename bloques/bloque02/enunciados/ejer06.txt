@@ -1,0 +1,7 @@
+📝 Ejercicio 06 - Copiar Archivo con Comprobación
+
+Crea un script que copie un archivo origen a destino, ambos pasados como argumentos.
+
+- Comprueba que el archivo origen existe
+- Usa `cp`
+- Debe comenzar con `#!/bin/sh`

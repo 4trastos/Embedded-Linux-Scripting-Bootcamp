@@ -1,0 +1,6 @@
+📝 Ejercicio 10 - Verificar Permisos de Archivo
+
+Crea un script que reciba un archivo como argumento y muestre si es ejecutable o no.
+
+- Usa condicionales y `[ -x archivo ]`
+- Debe comenzar con `#!/bin/sh`
