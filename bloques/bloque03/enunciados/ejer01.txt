@@ -1,0 +1,7 @@
+📝 Ejercicio 01 - Contador simple con for
+
+Escribe un script que imprima los números del 1 al 5, uno por línea.
+
+- Usa un bucle `for`
+- Usa `echo` para imprimir cada número
+- Empieza con `#!/bin/sh`

@@ -22,9 +22,18 @@ while [ $passed -lt 10 ]; do
     cat "$enunciado"
     echo ""
     echo "¿Listo para empezar? Pulsa ENTER para abrir vim..."
-    read
+    echo "(o escribe 'salir' y pulsa ENTER para terminar)"
+    read respuesta
 
+    if [ "$respuesta" = "salir" ] || [ "$respuesta" = "q" ]; then
+        echo "$passed" > .progreso.tmp
+        echo "💾 Progreso guardado. Puedes continuar más tarde."
+        exit 0
+    fi
+
+    # Crear archivo si no existe
     [ ! -f "$script" ] && echo "#!/bin/sh" > "$script" && chmod +x "$script"
+    
     vim "$script"
 
     echo ""

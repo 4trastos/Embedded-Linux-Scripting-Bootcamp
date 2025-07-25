@@ -1,0 +1,6 @@
+📝 Ejercicio 06 - Sustituir texto con sed
+
+Imprime el contenido de /etc/passwd pero reemplazando /bin/bash por /bin/sh.
+
+Usa sed
+No modifiques el archivo original, solo muestra por pantalla

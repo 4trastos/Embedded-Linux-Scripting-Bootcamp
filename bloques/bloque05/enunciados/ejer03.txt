@@ -1,0 +1,6 @@
+📝 Ejercicio 03 - Extraer usuarios
+
+Muestra los nombres de usuario (el primer campo antes de :) del archivo /etc/passwd.
+
+Usa cut -d ':' -f1
+Muestra uno por línea

@@ -1,0 +1,6 @@
+📝 Ejercicio 03 - Listar archivos del directorio
+
+Haz un script que liste todos los archivos del directorio actual (no carpetas).
+
+- Usa un bucle `for`
+- Usa `[ -f "$file" ]` para comprobar si es archivo regular

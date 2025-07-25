@@ -1,0 +1,6 @@
+📝 Ejercicio 02 - Imprimir todos los argumentos
+
+Crea un script que imprima todos los argumentos recibidos separados por espacio.
+
+- Usa `"$@"`
+- El formato debe ser: "Argumentos: arg1 arg2 arg3 ..."

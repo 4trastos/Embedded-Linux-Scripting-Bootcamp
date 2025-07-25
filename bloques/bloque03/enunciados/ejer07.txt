@@ -1,0 +1,5 @@
+📝 Ejercicio 07 - Validar argumentos con función
+
+Crea un script con una función que valide si se pasó al menos 1 argumento. Si no, muestra: "Uso: $0 <arg>"
+
+- Usa `"$#"` y `"$0"`

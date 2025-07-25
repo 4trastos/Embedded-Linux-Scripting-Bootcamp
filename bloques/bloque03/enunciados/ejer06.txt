@@ -1,0 +1,7 @@
+📝 Ejercicio 06 - Modularizar lógica
+
+Divide tu script en dos archivos:
+- `funciones.sh`: Contiene una función `mostrar_fecha` que imprime la fecha actual
+- `principal.sh`: Importa funciones.sh y ejecuta la función
+
+- Usa `. funciones.sh` o `source funciones.sh`

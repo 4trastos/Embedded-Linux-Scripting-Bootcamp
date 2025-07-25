@@ -1,0 +1,5 @@
+📝 Ejercicio 09 - Recorrer argumentos con for
+
+Crea un script que reciba cualquier cantidad de argumentos y los imprima uno por uno con un prefijo: "Arg: <valor>"
+
+- Usa `for arg in "$@"`

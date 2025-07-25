@@ -1,0 +1,6 @@
+📝 Ejercicio 02 - Suma del 1 al 10
+
+Crea un script que sume los números del 1 al 10 y muestre el resultado.
+
+- Usa un bucle `while` o `for`
+- La salida debe ser exactamente: "La suma es: 55"

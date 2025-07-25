@@ -1,0 +1,6 @@
+📝 Ejercicio 03 - Saludar con argumento
+
+Crea un script que reciba un nombre como argumento y salude: "Hola, <nombre>"
+
+- Usa `$1`
+- Si no se proporciona argumento, muestra: "Uso: ./script.sh <nombre>"

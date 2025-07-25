@@ -1,0 +1,6 @@
+📝 Ejercicio 04 - Filtrar por bash
+
+Filtra las líneas de /etc/passwd que contienen la palabra bash.
+
+Usa grep
+El resultado debe coincidir exactamente con las líneas que contienen /bin/bash

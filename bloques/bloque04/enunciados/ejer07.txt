@@ -1,0 +1,6 @@
+📝 Ejercicio 07 - Salir si no hay argumentos
+
+Crea un script que termine con código 1 si no se le pasa ningún argumento.
+
+- Usa `exit 1` en ese caso
+- Si hay argumento, imprime: "OK"

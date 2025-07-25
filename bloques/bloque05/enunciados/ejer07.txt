@@ -1,0 +1,6 @@
+📝 Ejercicio 07 - Convertir a mayúsculas
+
+Convierte a mayúsculas el contenido de un archivo llamado input.txt ubicado en el directorio actual.
+
+Usa tr '[:lower:]' '[:upper:]'
+No modifiques el archivo, imprime el resultado en pantalla

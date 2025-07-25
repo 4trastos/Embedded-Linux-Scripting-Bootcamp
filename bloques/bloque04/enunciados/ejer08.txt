@@ -1,0 +1,6 @@
+📝 Ejercicio 08 - Comprobar permisos de ejecución
+
+Crea un script que reciba un archivo y diga si tiene permiso de ejecución.
+
+- Usa `[ -x "$1" ]`
+- Mensajes esperados: "Ejecutable" o "No ejecutable"

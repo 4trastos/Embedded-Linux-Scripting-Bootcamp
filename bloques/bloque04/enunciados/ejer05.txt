@@ -1,0 +1,6 @@
+📝 Ejercicio 05 - Comprobar si un directorio existe
+
+Crea un script que reciba un nombre de directorio y diga si existe o no.
+
+- Usa `[ -d "$1" ]`
+- Mensajes: "Directorio encontrado" o "Directorio no encontrado"

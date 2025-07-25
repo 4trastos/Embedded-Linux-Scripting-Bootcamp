@@ -1,0 +1,6 @@
+📝 Ejercicio 09 - Comprobar código de salida
+
+Crea un script que llame a otro y diga si su código de salida fue 0 o distinto de 0.
+
+- Usa `$?`
+- Imprime: "Éxito" o "Error"

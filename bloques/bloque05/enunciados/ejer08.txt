@@ -1,0 +1,5 @@
+📝 Ejercicio 08 - Invertir contenido
+
+Imprime el contenido de /etc/passwd en orden inverso de líneas.
+
+Usa tac si está disponible, o tail -r como alternativa

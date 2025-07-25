@@ -1,0 +1,6 @@
+📝 Ejercicio 01 - Mostrar número de argumentos
+
+Crea un script que imprima el número de argumentos que se le pasan por línea de comandos.
+
+- Usa la variable especial `$#`
+- No uses `echo $#` directamente, imprime un mensaje como: "Número de argumentos: X"

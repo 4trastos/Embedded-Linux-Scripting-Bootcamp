@@ -1,0 +1,6 @@
+📝 Ejercicio 08 - Leer números y calcular suma
+
+Haz un script que pida números al usuario hasta que introduzca "fin", luego imprima la suma total.
+
+- Usa `read` y bucle `while`
+- Usa `expr` o `$(( ))` para sumar

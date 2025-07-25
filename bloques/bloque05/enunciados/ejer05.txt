@@ -1,0 +1,8 @@
+Crea un archivo llamado tempfile.txt en el directorio actual que contenga el texto:
+
+archivo temporal creado
+
+archivo temporal creado
+Usa echo con redirección (>)
+
+El script debe crear ese archivo si no existe

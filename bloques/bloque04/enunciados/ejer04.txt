@@ -1,0 +1,6 @@
+📝 Ejercicio 04 - Comprobar existencia de archivo
+
+Crea un script que reciba un nombre de archivo y diga si existe o no.
+
+- Usa `[ -f "$1" ]`
+- Mensajes esperados: "Existe" o "No existe"

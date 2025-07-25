@@ -1,0 +1,6 @@
+📝 Ejercicio 04 - Contar líneas de todos los archivos `.txt`
+
+Crea un script que recorra todos los archivos `.txt` del directorio actual e imprima cuántas líneas tiene cada uno.
+
+- Usa `wc -l` para contar líneas
+- Formato de salida: "archivo.txt: 3 líneas"

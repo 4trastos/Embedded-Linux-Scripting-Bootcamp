@@ -1,0 +1,5 @@
+📝 Ejercicio 09 - Eliminar líneas vacías
+
+Elimina todas las líneas vacías del archivo input.txt y muestra el resultado en pantalla.
+
+Usa grep . o sed '/^$/d'

@@ -1,0 +1,5 @@
+📝 Ejercicio 05 - Función de saludo
+
+Escribe una función llamada `saludar` que reciba un nombre como argumento e imprima: "Hola, <nombre>!"
+
+- Llama a la función desde el script con un nombre de prueba

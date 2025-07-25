@@ -1,0 +1,6 @@
+📝 Ejercicio 10 - Función factorial
+
+Escribe una función que calcule el factorial de un número entero positivo.
+
+- La función se llamará `factorial`
+- El script debe imprimir: "Factorial de 5 es: 120"

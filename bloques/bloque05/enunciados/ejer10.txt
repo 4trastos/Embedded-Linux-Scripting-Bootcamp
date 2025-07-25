@@ -1,0 +1,5 @@
+📝 Ejercicio 10 - Mostrar líneas únicas
+
+Imprime solo las líneas únicas del archivo input.txt, eliminando duplicados consecutivos.
+
+Usa uniq

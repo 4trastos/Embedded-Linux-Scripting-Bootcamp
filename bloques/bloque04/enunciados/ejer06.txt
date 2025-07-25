@@ -1,0 +1,6 @@
+📝 Ejercicio 06 - Comparar dos argumentos
+
+Crea un script que reciba dos números y diga cuál es mayor o si son iguales.
+
+- Usa `-eq`, `-gt`, `-lt`
+- Mensajes esperados: "X es mayor", "Y es mayor", "Son iguales"

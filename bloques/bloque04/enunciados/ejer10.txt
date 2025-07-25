@@ -1,0 +1,6 @@
+📝 Ejercicio 10 - Ejecutar comando pasado por argumento
+
+Crea un script que reciba un comando como argumento y lo ejecute.
+
+- Por ejemplo: `./script.sh ls` debería ejecutar `ls`
+- Usa `$@`
