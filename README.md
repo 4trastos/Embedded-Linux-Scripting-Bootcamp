@@ -4,14 +4,35 @@
 
 Bienvenido al **Embedded Linux Scripting Bootcamp**, un sistema de aprendizaje progresivo para dominar el scripting en Linux orientado a sistemas embebidos.
 
+---
+
 ## 🚀 ¿Qué es esto?
 
-Este proyecto contiene **100 ejercicios cuidadosamente diseñados** para ayudarte a aprender y dominar `shell scripting` con `sh` en un entorno Linux embebido.
+Este proyecto contiene **100 ejercicios cuidadosamente diseñados** para ayudarte a aprender y dominar `shell scripting` (`sh` y `bash`) en entornos embebidos como BusyBox, QEMU o Buildroot.
 
-La estructura está organizada en **10 bloques de 10 ejercicios**, que cubren desde lo más básico hasta técnicas más avanzadas de scripting.
+La estructura está organizada en **bloques temáticos**, desde lo más básico hasta scripting avanzado en sistemas Linux minimalistas.
 
-> 🎯 Cada bloque está diseñado como una pequeña "misión", que debes completar paso a paso.  
-> ✅ Solo puedes avanzar al siguiente bloque si completas correctamente el anterior.
+> 🎯 Cada bloque es una misión.  
+> ✅ Solo puedes avanzar si completas el anterior.  
+> 💡 ¡O activa el modo libre si solo quieres practicar!
+
+---
+
+## 🧩 ¿Qué aprenderás?
+
+| Bloque | Temática                                                   |
+|--------|------------------------------------------------------------|
+| 01     | Fundamentos del Shell (`echo`, permisos, ejecución)        |
+| 02     | Variables, argumentos, condicionales                       |
+| 03     | Bucles, funciones, scripts modulares                       |
+| 04     | Archivos, redirecciones, entrada/salida                    |
+| 05     | Procesos, señales, background jobs                         |
+| 06     | Filtros y texto: `grep`, `awk`, `sed`                      |
+| 07     | Scripting para sistemas embebidos (BusyBox real)           |
+| 08     | Automatización y herramientas (`Make`, `cron`)             |
+| 09     | Debugging y optimización de scripts                        |
+| 10     | Proyectos avanzados en entorno embebido                    |
+| 11     | 🔥 **Desafíos reales de Linux embebido** *(NEW!)*          |
 
 ---
 
@@ -19,7 +40,7 @@ La estructura está organizada en **10 bloques de 10 ejercicios**, que cubren de
 
 ```bash
 embedded-linux-scripts/
-├── menu.sh                     # Menú principal
+├── menu.sh                     # Menú principal interactivo
 └── bloques/
     ├── bloque01/
     │   ├── enunciados/         # Enunciados de los ejercicios
@@ -27,40 +48,8 @@ embedded-linux-scripts/
     │   ├── soluciones/         # Tus soluciones (se generan al ejecutar)
     │   └── run_bloque.sh       # Lógica interactiva del bloque
     ├── bloque02/
-    ├── ...
-    └── bloque10/
+    └── ...
 ````
-
----
-
-## 🧩 ¿Qué aprenderás?
-
-Cada bloque cubre un conjunto progresivo de habilidades:
-
-| Bloque | Temática                                               |
-| ------ | ------------------------------------------------------ |
-| 01     | Fundamentos: `echo`, comentarios, permisos, estructura |
-| 02     | Variables, tipos, operaciones básicas                  |
-| 03     | Condicionales (`if`, `else`, `test`)                   |
-| 04     | Argumentos y códigos de retorno                        |
-| 05     | Bucles (`for`, `while`, `until`)                       |
-| 06     | Manipulación de texto (`cut`, `grep`, `awk`)           |
-| 07     | Gestión de ficheros y directorios                      |
-| 08     | Funciones, modularización, reutilización               |
-| 09     | Señales, procesos, job control                         |
-| 10     | Integración y mini-proyectos                           |
-
----
-
-## 🛠 Requisitos
-
-* ✅ Linux o WSL
-* ✅ Tener instalado: `bash`, `sh`, `coreutils`
-* ✅ Tener instalado **Vim** (imprescindible para editar los ejercicios):
-
-```bash
-sudo apt install vim
-```
 
 ---
 
@@ -69,8 +58,8 @@ sudo apt install vim
 1. **Clona el repositorio**:
 
 ```bash
-git clone https://github.com/tuusuario/embedded-linux-scripts.git
-cd embedded-linux-scripts
+git clone https://github.com/4trastos/Embedded-Linux-Scripting-Bootcamp.git
+cd Embedded-Linux-Scripting-Bootcamp
 ```
 
 2. **Haz ejecutable el menú y ejecútalo**:
@@ -81,62 +70,132 @@ chmod +x menu.sh
 ```
 
 3. **Explora los bloques**
-   El sistema detectará qué bloques tienes desbloqueados y te permitirá continuar paso a paso.
+
+El sistema detectará tu progreso y te permitirá avanzar bloque a bloque.
 
 4. **Cada ejercicio**:
 
-   * Te mostrará el enunciado
-   * Al pulsar ENTER, se abrirá en `vim` para que escribas tu solución
-   * Al guardar y salir, el sistema la corrige automáticamente
-   * Si apruebas, pasas al siguiente
+* Te muestra el enunciado
+* Al pulsar ENTER se abre en `vim`
+* Tu script es corregido automáticamente
+* Si apruebas, avanzas al siguiente
+
+---
+
+## 🔓 ¿Modo libre?
+
+Si deseas practicar sin restricciones ni bloqueos, activa el **modo libre**:
+
+```bash
+export BOOTCAMP_MODE=free
+./menu.sh
+```
+
+También puedes usarlo dentro de un bloque específico:
+
+```bash
+cd bloques/bloque07
+export BOOTCAMP_MODE=free
+./run_bloque.sh
+```
 
 ---
 
 ## 📈 Progreso y Desbloqueo
 
-* Cada bloque finalizado te da un **código de desbloqueo automático**
-* Los progresos se guardan automáticamente
-* Puedes consultar tu progreso desde el menú principal
+* Cada bloque finalizado genera un `unlock_code.txt`
+* Tu avance queda registrado en `.progreso.tmp`
+* Desde el menú puedes ver tu progreso por bloque
 
 ---
 
-## 👥 Contribuciones
+## 🛠 Requisitos
+
+* ✅ Linux, WSL o QEMU
+* ✅ Instalados: `bash`, `sh`, `coreutils`, `vim`
+* ✅ Opcional: BusyBox o entorno Buildroot para emular sistemas embebidos
+
+```bash
+sudo apt update
+sudo apt install bash vim coreutils
+```
+
+---
+
+## 👥 ¿Cómo contribuir?
 
 ¿Quieres colaborar?
 
-* Puedes aportar nuevos bloques o mejorar tests
-* Puedes proponer nuevos ejercicios o bugs en [Issues](https://github.com/tuusuario/embedded-linux-scripts/issues)
+* Agrega nuevos ejercicios, bloques o tests
+* Mejora los scripts existentes
+* Reporta bugs o ideas en [Issues](https://github.com/4trastos/Embedded-Linux-Scripting-Bootcamp/issues)
+
+Pull requests bienvenidos 👇
+
+```bash
+git clone https://github.com/4trastos/Embedded-Linux-Scripting-Bootcamp.git
+git checkout -b nueva-funcionalidad
+# haz tus cambios...
+```
 
 ---
 
 ## 📜 Licencia
 
 Este proyecto está bajo la licencia MIT.
-¡Úsalo, compártelo y mejora tu habilidad en scripting Linux!
+Puedes usarlo, estudiarlo, modificarlo y compartirlo libremente.
 
 ---
 
-**¡Feliz aprendizaje!**
-📬 Si tienes dudas o sugerencias, no dudes en abrir una issue o contactarme.
+## 📬 Contacto
+
+¿Dudas, ideas, propuestas?
+
+* Abre un Issue
+* O contáctame vía GitHub → [@4trastos](https://github.com/4trastos)
 
 ---
 
----
+**¡A programar como un ninja del shell! 🐧**
+
+```
 
 ## 🌐 English Version
 
+````markdown
 # 🧠 Embedded Linux Scripting Bootcamp
 
-Welcome to the **Embedded Linux Scripting Bootcamp**, a progressive learning system to master Linux shell scripting focused on embedded systems.
+Welcome to the **Embedded Linux Scripting Bootcamp**, a progressive self-learning system to master shell scripting in Linux, specifically tailored for embedded environments.
+
+---
 
 ## 🚀 What is this?
 
-This project contains **100 carefully crafted exercises** to help you learn and master `sh` scripting in an embedded Linux environment.
+This project offers **100 carefully designed exercises** to help you learn and master `sh`/`bash` scripting in minimal or embedded Linux environments such as BusyBox, QEMU, or Buildroot.
 
-The content is structured into **10 blocks with 10 exercises each**, progressing from beginner to advanced scripting topics.
+The structure is organized into **thematic blocks**, from beginner-level tasks to advanced scripting challenges in real embedded contexts.
 
-> 🎯 Each block is designed like a small "mission" to complete step by step.
-> ✅ You can only proceed to the next block after passing the current one.
+> 🎯 Each block is a mission.  
+> ✅ You can only advance after passing the previous one.  
+> 💡 Or unlock **Free Mode** for unrestricted practice!
+
+---
+
+## 🧩 What will you learn?
+
+| Block | Topic                                                        |
+|-------|--------------------------------------------------------------|
+| 01    | Shell basics (`echo`, permissions, script execution)         |
+| 02    | Variables, arguments, conditionals                           |
+| 03    | Loops, functions, modular scripts                            |
+| 04    | File handling, redirections, input/output                    |
+| 05    | Processes, signals, background jobs                          |
+| 06    | Filters and text tools: `grep`, `awk`, `sed`                 |
+| 07    | Scripting for embedded systems (real BusyBox environments)   |
+| 08    | Automation and tooling (`Make`, `cron`)                      |
+| 09    | Script debugging and performance optimization                |
+| 10    | Advanced projects in embedded contexts                       |
+| 11    | 🔥 **Real-world embedded scripting challenges** *(NEW!)*     |
 
 ---
 
@@ -144,102 +203,123 @@ The content is structured into **10 blocks with 10 exercises each**, progressing
 
 ```bash
 embedded-linux-scripts/
-├── menu.sh                     # Main menu script
+├── menu.sh                     # Main interactive menu
 └── bloques/
     ├── bloque01/
     │   ├── enunciados/         # Exercise descriptions
     │   ├── tests/              # Automated test scripts
-    │   ├── soluciones/         # Your solutions (generated as you work)
-    │   └── run_bloque.sh       # Interactive logic of the block
+    │   ├── soluciones/         # Your solutions (generated on execution)
+    │   └── run_bloque.sh       # Interactive block logic
     ├── bloque02/
-    ├── ...
-    └── bloque10/
-```
+    └── ...
+````
 
 ---
 
-## 🧩 What will you learn?
-
-Each block covers a progressive set of skills:
-
-| Block | Topic                                                   |
-| ----- | ------------------------------------------------------- |
-| 01    | Basics: `echo`, comments, permissions, script structure |
-| 02    | Variables, types, basic operations                      |
-| 03    | Conditionals (`if`, `else`, `test`)                     |
-| 04    | Arguments and return codes                              |
-| 05    | Loops (`for`, `while`, `until`)                         |
-| 06    | Text manipulation (`cut`, `grep`, `awk`)                |
-| 07    | File and directory management                           |
-| 08    | Functions, modularization, reuse                        |
-| 09    | Signals, processes, job control                         |
-| 10    | Integration and mini-projects                           |
-
----
-
-## 🛠 Requirements
-
-* ✅ Linux or WSL
-* ✅ Installed: `bash`, `sh`, `coreutils`
-* ✅ You **must install Vim** (used to edit exercises):
-
-```bash
-sudo apt install vim
-```
-
----
-
-## ▶️ How to use it
+## ▶️ How to use
 
 1. **Clone the repository**:
 
 ```bash
-git clone https://github.com/youruser/embedded-linux-scripts.git
-cd embedded-linux-scripts
+git clone https://github.com/4trastos/Embedded-Linux-Scripting-Bootcamp.git
+cd Embedded-Linux-Scripting-Bootcamp
 ```
 
-2. **Make the menu script executable and run it**:
+2. **Make the menu executable and run it**:
 
 ```bash
 chmod +x menu.sh
 ./menu.sh
 ```
 
-3. **Explore the blocks**
-   The system will detect which blocks are unlocked and let you continue step by step.
+3. **Navigate through the blocks**
+
+The system will detect your current progress and allow you to move forward step by step.
 
 4. **Each exercise**:
 
-   * Shows the description
-   * Opens in `vim` when you press ENTER
-   * After saving and exiting, your solution is automatically tested
-   * If it passes, you proceed to the next exercise
+* Displays the description
+* Opens automatically in `vim` for you to edit
+* Automatically tests your solution upon saving and exiting
+* Lets you proceed only if your solution passes
+
+---
+
+## 🔓 Free Mode (practice without restrictions)
+
+Want to explore freely without unlocking blocks?
+
+```bash
+export BOOTCAMP_MODE=free
+./menu.sh
+```
+
+Or for a specific block:
+
+```bash
+cd bloques/bloque04
+export BOOTCAMP_MODE=free
+./run_bloque.sh
+```
 
 ---
 
 ## 📈 Progress and Unlocking
 
-* Each completed block unlocks the next automatically
-* Progress is saved locally
-* You can view your progress from the main menu
+* Each completed block generates a `unlock_code.txt`
+* Your progress is saved in `.progreso.tmp`
+* The menu shows your current completion status for each block
 
 ---
 
-## 👥 Contributions
+## 🛠 Requirements
 
-Want to help?
+* ✅ Linux, WSL, or QEMU
+* ✅ Tools: `bash`, `sh`, `coreutils`, `vim`
+* ✅ Optional: BusyBox or Buildroot to simulate embedded Linux
 
-* Contribute new blocks or improve existing tests
-* Suggest new exercises or report bugs in [Issues](https://github.com/youruser/embedded-linux-scripts/issues)
+```bash
+sudo apt update
+sudo apt install bash vim coreutils
+```
+
+---
+
+## 👥 Contributing
+
+Want to contribute?
+
+* Add new blocks or exercises
+* Improve test scripts
+* Report bugs or suggest ideas on [Issues](https://github.com/4trastos/Embedded-Linux-Scripting-Bootcamp/issues)
+
+Pull requests are welcome 👇
+
+```bash
+git clone https://github.com/4trastos/Embedded-Linux-Scripting-Bootcamp.git
+git checkout -b new-feature
+# implement and commit changes
+```
 
 ---
 
 ## 📜 License
 
-This project is under the MIT License.
-Use it, share it, and level up your Linux scripting skills!
+This project is licensed under the MIT License.
+Feel free to use, modify, learn from, and share it!
 
 ---
 
-**Happy hacking!**
-📬 Feel free to open an issue if you have questions or suggestions.
+## 📬 Contact
+
+Have questions, suggestions, or feedback?
+
+* Open an Issue
+* Or contact me via GitHub → [@4trastos](https://github.com/4trastos)
+
+---
+
+**💥 Let's script like embedded pros! 🐧**
+
+```
+
