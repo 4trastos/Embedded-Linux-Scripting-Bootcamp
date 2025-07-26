@@ -1,4 +1,3 @@
-````markdown
 # 🧠 Embedded Linux Scripting Bootcamp
 
 Bienvenido al **Embedded Linux Scripting Bootcamp**, un sistema de aprendizaje progresivo para dominar el scripting en Linux orientado a sistemas embebidos.
@@ -17,6 +16,7 @@ La estructura está organizada en **10 bloques de 10 ejercicios**, que cubren de
 
 ## 📦 Estructura del Proyecto
 
+````markdown
 ```bash
 embedded-linux-scripts/
 ├── menu.sh                     # Menú principal
