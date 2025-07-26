@@ -1,7 +1,12 @@
 #!/bin/sh
-output=$("$1")
-if [ "$output" = "Expected output for ejer10" ]; then
-    echo "✅ PASS"
+
+script=$1
+fake_url="https://example.com/fake.sh"
+
+output=$(echo "n" | "$script" "$fake_url")
+
+if echo "$output" | grep -qi "confirmación" || echo "$output" | grep -qi "¿"; then
+  echo "✅ PASS"
 else
-    echo "❌ FAIL: Esperado 'Expected output for ejer10', obtuviste '$output'"
+  echo "❌ FAIL: No se pidió confirmación antes de actualizar"
 fi

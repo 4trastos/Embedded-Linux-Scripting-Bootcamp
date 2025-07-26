@@ -1,3 +1,7 @@
-📝 Ejercicio 02 - Bloque 07
+📝 Ejercicio 02 - Verificar Servicio Activo
 
-Descripción detallada del ejercicio 2 del bloque 07.
+Crea un script que reciba el nombre de un proceso y diga si está corriendo.
+
+Usa pgrep
+
+Imprime Running o Not running

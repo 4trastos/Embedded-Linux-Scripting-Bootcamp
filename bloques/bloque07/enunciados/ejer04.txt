@@ -1,3 +1,7 @@
-📝 Ejercicio 04 - Bloque 07
+📝 Ejercicio 04 - Cron Simulado
 
-Descripción detallada del ejercicio 4 del bloque 07.
+Crea un script que ejecute un segundo script cada 5 segundos por 5 veces.
+
+Usa sleep y sh
+
+El segundo script debe ser recibido como parámetro

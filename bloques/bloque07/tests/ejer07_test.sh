@@ -1,7 +1,10 @@
 #!/bin/sh
-output=$("$1")
-if [ "$output" = "Expected output for ejer07" ]; then
-    echo "✅ PASS"
+
+script=$1
+output=$("$script" | head -n 3)
+
+if echo "$output" | grep -qiE 'cpu|usr|%'; then
+  echo "✅ PASS"
 else
-    echo "❌ FAIL: Esperado 'Expected output for ejer07', obtuviste '$output'"
+  echo "❌ FAIL: No se detectó salida relacionada con CPU"
 fi

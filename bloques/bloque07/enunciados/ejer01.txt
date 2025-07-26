@@ -1,3 +1,9 @@
-📝 Ejercicio 01 - Bloque 07
+📝 Ejercicio 01 - Listar Procesos del Usuario
 
-Descripción detallada del ejercicio 1 del bloque 07.
+Crea un script que liste todos los procesos pertenecientes al usuario actual.
+
+Usa ps y grep o awk
+
+Muestra PID, nombre y estado del proceso
+
+Empieza con #!/bin/sh

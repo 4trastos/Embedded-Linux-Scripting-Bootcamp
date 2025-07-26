@@ -1,7 +1,17 @@
 #!/bin/sh
-output=$("$1")
-if [ "$output" = "Expected output for ejer04" ]; then
-    echo "✅ PASS"
+
+script=$1
+
+cat << 'EOF' > /tmp/fake_job.sh
+#!/bin/sh
+echo "Ejecución de trabajo simulada"
+EOF
+chmod +x /tmp/fake_job.sh
+
+output=$("$script" /tmp/fake_job.sh | grep -c "Ejecución de trabajo simulada")
+
+if [ "$output" -eq 5 ]; then
+  echo "✅ PASS"
 else
-    echo "❌ FAIL: Esperado 'Expected output for ejer04', obtuviste '$output'"
+  echo "❌ FAIL: Se esperaban 5 ejecuciones, se obtuvieron $output"
 fi

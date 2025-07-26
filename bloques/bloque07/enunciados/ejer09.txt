@@ -1,3 +1,5 @@
-📝 Ejercicio 09 - Bloque 07
+📝 Ejercicio 09 - Automatizar Backup
 
-Descripción detallada del ejercicio 9 del bloque 07.
+Crea un script que comprima un directorio dado y lo guarde con timestamp en su nombre.
+
+Usa tar y date

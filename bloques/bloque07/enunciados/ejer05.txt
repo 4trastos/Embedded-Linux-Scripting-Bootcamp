@@ -1,3 +1,7 @@
-📝 Ejercicio 05 - Bloque 07
+📝 Ejercicio 05 - Monitorear Archivo de Logs
 
-Descripción detallada del ejercicio 5 del bloque 07.
+Crea un script que reciba un archivo de log y muestre solo las líneas nuevas cada segundo (como tail -f).
+
+Usa tail -n0 -f
+
+Usa trap para capturar CTRL+C y terminar limpiamente

@@ -1,7 +1,10 @@
 #!/bin/sh
-output=$("$1")
-if [ "$output" = "Expected output for ejer03" ]; then
-    echo "✅ PASS"
+
+script=$1
+output=$("$script")
+
+if echo "$output" | grep -qE 'Uso de disco: [0-9]+% - (OK|ALERTA)'; then
+  echo "✅ PASS"
 else
-    echo "❌ FAIL: Esperado 'Expected output for ejer03', obtuviste '$output'"
+  echo "❌ FAIL: Salida inválida: $output"
 fi

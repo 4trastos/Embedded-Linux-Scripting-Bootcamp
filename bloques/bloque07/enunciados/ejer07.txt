@@ -1,3 +1,5 @@
-📝 Ejercicio 07 - Bloque 07
+📝 Ejercicio 07 - Monitor de CPU
 
-Descripción detallada del ejercicio 7 del bloque 07.
+Crea un script que muestre el uso actual de CPU y lo actualice cada segundo.
+
+Usa top en modo batch o mpstat

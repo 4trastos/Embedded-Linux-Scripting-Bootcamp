@@ -1,3 +1,5 @@
-📝 Ejercicio 06 - Bloque 07
+📝 Ejercicio 06 - Analizar Logs de Error
 
-Descripción detallada del ejercicio 6 del bloque 07.
+Crea un script que cuente cuántas veces aparece la palabra "ERROR" en un log pasado como parámetro.
+
+Usa grep -c

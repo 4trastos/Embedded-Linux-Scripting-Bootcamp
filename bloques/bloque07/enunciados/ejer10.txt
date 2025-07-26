@@ -1,3 +1,7 @@
-📝 Ejercicio 10 - Bloque 07
+📝 Ejercicio 10 - Script Auto-Actualizable
 
-Descripción detallada del ejercicio 10 del bloque 07.
+Crea un script que se actualice a sí mismo descargando la última versión desde una URL.
+
+Usa curl o wget
+
+Pide confirmación antes de sobrescribirse

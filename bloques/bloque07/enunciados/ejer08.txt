@@ -1,3 +1,5 @@
-📝 Ejercicio 08 - Bloque 07
+📝 Ejercicio 08 - Monitor de Memoria
 
-Descripción detallada del ejercicio 8 del bloque 07.
+Crea un script que muestre el uso actual de memoria cada segundo.
+
+Usa free o cat /proc/meminfo

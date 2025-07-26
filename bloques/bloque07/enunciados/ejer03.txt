@@ -1,3 +1,8 @@
-📝 Ejercicio 03 - Bloque 07
+📝 Ejercicio 03 - Verificar Espacio en Disco
 
-Descripción detallada del ejercicio 3 del bloque 07.
+Crea un script que muestre el uso de disco en / y alerte si es mayor al 80%.
+
+Usa df
+
+Formato: "Uso de disco: 76% - OK" o "Uso de disco: 92% - ALERTA"
+
