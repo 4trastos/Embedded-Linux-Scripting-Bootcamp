@@ -1,3 +1,3 @@
-📝 Ejercicio 06 - Bloque 06
+📝 Ejercicio 06 - Mostrar procesos en ejecución
 
-Descripción detallada del ejercicio 6 del bloque 06.
+Crea un script que liste los procesos del usuario actual utilizando ps.

@@ -1,7 +1,8 @@
 #!/bin/sh
-output=$("$1")
-if [ "$output" = "Expected output for ejer09" ]; then
+rm -f lista.txt
+"$1"
+if [ -f lista.txt ] && [ -s lista.txt ]; then
     echo "✅ PASS"
 else
-    echo "❌ FAIL: Esperado 'Expected output for ejer09', obtuviste '$output'"
+    echo "❌ FAIL: El archivo 'lista.txt' no fue creado o está vacío"
 fi

@@ -1,3 +1,8 @@
-📝 Ejercicio 02 - Bloque 06
+📝 Ejercicio 02 - Menú simple con opciones
 
-Descripción detallada del ejercicio 2 del bloque 06.
+Crea un script que muestre un menú con tres opciones:
+
+Decir Hola
+Mostrar fecha
+Salir
+El usuario debe poder elegir y ejecutar la opción seleccionada.

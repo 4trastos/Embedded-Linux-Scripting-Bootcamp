@@ -1,7 +1,8 @@
 #!/bin/sh
-output=$("$1")
-if [ "$output" = "Expected output for ejer04" ]; then
+rm -f error.log
+"$1"
+if [ -s error.log ]; then
     echo "✅ PASS"
 else
-    echo "❌ FAIL: Esperado 'Expected output for ejer04', obtuviste '$output'"
+    echo "❌ FAIL: No se redirigió el error al archivo error.log"
 fi

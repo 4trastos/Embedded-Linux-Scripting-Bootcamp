@@ -1,3 +1,9 @@
-📝 Ejercicio 03 - Bloque 06
+📝 Ejercicio 03 - Comprobación de entrada vacía
 
-Descripción detallada del ejercicio 3 del bloque 06.
+Crea un script que:
+
+Pida al usuario que escriba algo.
+
+Si el usuario no escribe nada, imprime: “Entrada vacía”.
+
+Si escribe algo, lo repite con: “Has escrito: <entrada>”

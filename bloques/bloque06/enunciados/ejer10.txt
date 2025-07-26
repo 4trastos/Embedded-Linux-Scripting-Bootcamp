@@ -1,3 +1,10 @@
-📝 Ejercicio 10 - Bloque 06
+📝 Ejercicio 10 - Background + Espera
 
-Descripción detallada del ejercicio 10 del bloque 06.
+Crea un script que:
+
+Ejecute un sleep 5 en segundo plano.
+
+Espere con wait.
+
+Imprima "Finalizado" tras esperar.
+

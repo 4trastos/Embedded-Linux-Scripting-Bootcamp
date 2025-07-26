@@ -1,3 +1,3 @@
-📝 Ejercicio 08 - Bloque 06
+📝 Ejercicio 08 - Temporizador con cuenta atrás
 
-Descripción detallada del ejercicio 8 del bloque 06.
+Crea un script que reciba un número como argumento y haga una cuenta atrás hasta 0.

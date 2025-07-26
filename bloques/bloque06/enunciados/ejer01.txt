@@ -1,3 +1,6 @@
-📝 Ejercicio 01 - Bloque 06
+📝 Ejercicio 01 - Leer nombre del usuario
 
-Descripción detallada del ejercicio 1 del bloque 06.
+Crea un script que:
+
+Pregunte el nombre al usuario con read.
+Imprima: Hola, <nombre>!

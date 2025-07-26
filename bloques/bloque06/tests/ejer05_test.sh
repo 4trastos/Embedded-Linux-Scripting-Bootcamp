@@ -1,7 +1,11 @@
 #!/bin/sh
+start_time=$(date +%s)
 output=$("$1")
-if [ "$output" = "Expected output for ejer05" ]; then
+end_time=$(date +%s)
+duration=$((end_time - start_time))
+
+if [ "$duration" -ge 5 ]; then
     echo "✅ PASS"
 else
-    echo "❌ FAIL: Esperado 'Expected output for ejer05', obtuviste '$output'"
+    echo "❌ FAIL: El script terminó demasiado rápido (duración: ${duration}s)"
 fi

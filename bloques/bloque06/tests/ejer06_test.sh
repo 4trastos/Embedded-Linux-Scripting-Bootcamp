@@ -1,7 +1,7 @@
 #!/bin/sh
 output=$("$1")
-if [ "$output" = "Expected output for ejer06" ]; then
+if echo "$output" | grep -q "PID"; then
     echo "✅ PASS"
 else
-    echo "❌ FAIL: Esperado 'Expected output for ejer06', obtuviste '$output'"
+    echo "❌ FAIL: No se detectaron procesos listados"
 fi
