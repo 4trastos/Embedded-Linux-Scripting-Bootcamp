@@ -1,7 +1,13 @@
-# Directorio: bloques/bloque02/
-
-# run_bloque.sh
 #!/bin/bash
+
+# Modo libre
+MODO_LIBRE=false
+if [[ "$1" == "--libre" ]]; then
+    MODO_LIBRE=true
+    echo "🔓 Ejecutando en MODO LIBRE (progreso no se guardará)"
+    sleep 1
+fi
+
 
 cd "$(dirname "$0")"
 mkdir -p soluciones

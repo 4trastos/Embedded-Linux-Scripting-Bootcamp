@@ -1,0 +1,18 @@
+Ejercicio 11.10 - Listar procesos por usuario
+=============================================
+
+🎯 Objetivo:
+Crear un script llamado `procesos_usuario.sh` que muestre el número de procesos
+activos de cada usuario en el sistema.
+
+📂 Requisitos:
+- El script no recibe argumentos.
+- Debe listar usuarios y cantidad de procesos, ordenado por número de procesos descendente.
+- Mostrar la salida en formato: usuario - número_de_procesos
+
+📌 Ejemplo:
+
+    ./procesos_usuario.sh
+    root - 15
+    user1 - 5
+    user2 - 3

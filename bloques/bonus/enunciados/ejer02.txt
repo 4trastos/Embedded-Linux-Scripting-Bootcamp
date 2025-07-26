@@ -1,0 +1,19 @@
+Ejercicio 11.02 - Monitorizar proceso y reiniciar
+=================================================
+
+🎯 Objetivo:
+Crear un script llamado `monitorear_proceso.sh` que compruebe si un proceso
+con un nombre dado está corriendo. Si no lo está, debe iniciarlo.
+
+📂 Requisitos:
+- El script debe aceptar un argumento: el nombre del proceso a monitorear.
+- Si el proceso no está corriendo, debe iniciarlo ejecutando el comando con ese nombre.
+- Debe mostrar un mensaje indicando si el proceso ya estaba activo o si fue iniciado.
+
+📌 Ejemplo:
+
+    ./monitorear_proceso.sh myserver
+    -> El proceso 'myserver' ya está activo.
+
+    ./monitorear_proceso.sh myserver
+    -> Proceso 'myserver' no encontrado. Iniciando...

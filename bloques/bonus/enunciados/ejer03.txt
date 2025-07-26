@@ -1,0 +1,19 @@
+Ejercicio 11.03 - Backup incremental de directorios
+===================================================
+
+🎯 Objetivo:
+Crear un script llamado `backup_incremental.sh` que realice una copia de seguridad
+incremental de un directorio origen a un directorio destino.
+
+📂 Requisitos:
+- El script debe aceptar dos argumentos:
+    1. Directorio origen
+    2. Directorio destino
+- Debe copiar solo los archivos modificados desde la última copia.
+- Debe mostrar cuántos archivos fueron copiados.
+- Si el directorio destino no existe, debe crearlo.
+
+📌 Ejemplo:
+
+    ./backup_incremental.sh /home/user/docs /backup/docs
+    -> 5 archivos copiados.

@@ -1,0 +1,16 @@
+Ejercicio 11.09 - Contar palabras en archivos
+=============================================
+
+🎯 Objetivo:
+Crear un script llamado `contar_palabras.sh` que cuente el número total de
+palabras en todos los archivos `.txt` de un directorio dado.
+
+📂 Requisitos:
+- El script debe aceptar un argumento: directorio.
+- Debe sumar las palabras de todos los archivos `.txt`.
+- Mostrar el total de palabras encontradas.
+
+📌 Ejemplo:
+
+    ./contar_palabras.sh /tmp/docs
+    Total palabras: 57

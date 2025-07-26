@@ -1,0 +1,20 @@
+Ejercicio 11.08 - Buscar palabra en archivos
+============================================
+
+🎯 Objetivo:
+Crear un script llamado `buscar_palabra.sh` que busque una palabra
+en todos los archivos `.txt` de un directorio y muestre en qué archivos aparece.
+
+📂 Requisitos:
+- El script debe aceptar dos argumentos:
+    1. Directorio a buscar.
+    2. Palabra a buscar.
+- Debe listar los nombres de archivos `.txt` donde la palabra aparezca al menos una vez.
+- Si no se encuentra la palabra, debe mostrar un mensaje adecuado.
+
+📌 Ejemplo:
+
+    ./buscar_palabra.sh /tmp/docs error
+    Encontrado en:
+    archivo1.txt
+    archivo3.txt

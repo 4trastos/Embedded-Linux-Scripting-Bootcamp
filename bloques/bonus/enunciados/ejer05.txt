@@ -1,0 +1,16 @@
+Ejercicio 11.05 - Contador de líneas en archivos
+===============================================
+
+🎯 Objetivo:
+Crear un script llamado `contador_lineas.sh` que cuente el número total de líneas
+en todos los archivos `.txt` de un directorio dado.
+
+📂 Requisitos:
+- El script debe aceptar un argumento: el directorio a analizar.
+- Debe mostrar el total de líneas sumadas de todos los archivos `.txt`.
+- Si no hay archivos `.txt` debe mostrar 0.
+
+📌 Ejemplo:
+
+    ./contador_lineas.sh /tmp/docs
+    Total líneas: 123

@@ -1,0 +1,23 @@
+Ejercicio 11.01 - Limpiar logs antiguos
+=======================================
+
+🎯 Objetivo:
+Crear un script llamado `limpiar_logs.sh` que elimine todos los archivos `.log`
+en el directorio `/var/logs/fake_logs/` que tengan más de 7 días de antigüedad.
+
+📂 Requisitos:
+- El script debe aceptar un argumento opcional: el directorio donde buscar los logs.
+- Si no se proporciona ningún argumento, se usará `/var/logs/fake_logs/` como valor por defecto.
+- El script debe mostrar cuántos archivos ha eliminado.
+
+📌 Ejemplo de uso:
+
+    ./limpiar_logs.sh
+    -> Se han eliminado 4 archivos log antiguos.
+
+    ./limpiar_logs.sh /tmp/mis_logs
+    -> Se han eliminado 2 archivos log antiguos.
+
+✅ Tips:
+- Usa `find` para encontrar los archivos con más de 7 días.
+- Asegúrate de que el script funcione aunque no haya archivos para borrar.

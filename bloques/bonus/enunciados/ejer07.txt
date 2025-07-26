@@ -1,0 +1,16 @@
+Ejercicio 11.07 - Eliminar archivos vacíos
+==========================================
+
+🎯 Objetivo:
+Crear un script llamado `eliminar_vacios.sh` que elimine todos los archivos
+vacíos en un directorio dado.
+
+📂 Requisitos:
+- El script debe aceptar un argumento: directorio a limpiar.
+- Debe mostrar cuántos archivos vacíos eliminó.
+- Si no hay archivos vacíos, debe indicarlo.
+
+📌 Ejemplo:
+
+    ./eliminar_vacios.sh /tmp/dir
+    Se eliminaron 3 archivos vacíos.

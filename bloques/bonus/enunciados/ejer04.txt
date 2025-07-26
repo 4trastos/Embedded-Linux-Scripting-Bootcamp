@@ -1,0 +1,21 @@
+Ejercicio 11.04 - Resumen de usuarios conectados
+================================================
+
+🎯 Objetivo:
+Crear un script llamado `resumen_usuarios.sh` que muestre un resumen
+de los usuarios actualmente conectados al sistema.
+
+📂 Requisitos:
+- El script debe mostrar:
+  * Número total de usuarios conectados.
+  * Lista de usuarios únicos conectados.
+- Debe mostrarlo de forma clara y ordenada.
+
+📌 Ejemplo:
+
+    ./resumen_usuarios.sh
+    Usuarios conectados: 3
+    Lista:
+    - user1
+    - user2
+    - user3

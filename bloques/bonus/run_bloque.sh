@@ -8,7 +8,6 @@ if [[ "$1" == "--libre" ]]; then
     sleep 1
 fi
 
-
 cd "$(dirname "$0")"
 mkdir -p soluciones
 enunciados="enunciados"
@@ -23,7 +22,7 @@ while [ $passed -lt 10 ]; do
 
     clear
     echo "=============================="
-    echo "🧱 Bloque 8 - Ejercicio $ejercicio"
+    echo "🧱 Bloque BONUS - Ejercicio $ejercicio"
     echo "=============================="
     cat "$enunciado"
     echo ""
@@ -60,6 +59,7 @@ while [ $passed -lt 10 ]; do
 done
 
 # Fin de bloque
-echo "🎉 ¡Has completado el Bloque 8!"
-echo "Código para desbloquear Bloque 9: CODE-BLOQUE-2-UNLOCK" > unlock_code.txt
-echo "✅ Código guardado en unlock_code.txt"
+echo "🎉 ¡Has completado el Bloque 10!"
+
+# Llama al script de felicitación
+./congratulations.sh
