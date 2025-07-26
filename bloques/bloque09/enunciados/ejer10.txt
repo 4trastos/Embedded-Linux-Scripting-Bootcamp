@@ -1,3 +1,5 @@
-📝 Ejercicio 10 - Bloque 09
+📝 Ejercicio 10 - Detectar Servicios Caídos
 
-Descripción detallada del ejercicio 10 del bloque 09.
+- Escribe un script que verifique si ciertos servicios esenciales (como ssh, cron, syslog) están activos.
+- Usa ps, pidof, o pgrep
+- Muestra si cada uno está "Activo" o "Inactivo"

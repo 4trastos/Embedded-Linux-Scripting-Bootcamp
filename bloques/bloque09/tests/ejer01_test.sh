@@ -1,7 +1,7 @@
 #!/bin/sh
 output=$("$1")
-if [ "$output" = "Expected output for ejer01" ]; then
+if echo "$output" | grep -qE '^[0-9]{4}-[0-9]{2}-[0-9]{2} [0-9]{2}:[0-9]{2}:[0-9]{2}$'; then
     echo "✅ PASS"
 else
-    echo "❌ FAIL: Esperado 'Expected output for ejer01', obtuviste '$output'"
+    echo "❌ FAIL: Formato incorrecto. Esperado: YYYY-MM-DD HH:MM:SS"
 fi

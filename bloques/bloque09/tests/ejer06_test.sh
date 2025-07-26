@@ -1,7 +1,8 @@
 #!/bin/sh
 output=$("$1")
-if [ "$output" = "Expected output for ejer06" ]; then
+expected="Permisos correctos"
+if echo "$output" | grep -Eq "Permisos correctos|Permisos incorrectos"; then
     echo "✅ PASS"
 else
-    echo "❌ FAIL: Esperado 'Expected output for ejer06', obtuviste '$output'"
+    echo "❌ FAIL: Salida inválida. Esperado 'Permisos correctos' o 'Permisos incorrectos'. Obtuviste: '$output'"
 fi

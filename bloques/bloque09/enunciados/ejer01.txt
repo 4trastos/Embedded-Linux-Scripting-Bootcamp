@@ -1,3 +1,6 @@
-📝 Ejercicio 01 - Bloque 09
+📝 Ejercicio 01 - Mostrar Fecha y Hora Actual
 
-Descripción detallada del ejercicio 1 del bloque 09.
+- Crea un script que muestre la fecha y hora actuales en formato: YYYY-MM-DD HH:MM:SS
+- Usa el comando date "+%F %T"
+- Comienza con #!/bin/sh
+

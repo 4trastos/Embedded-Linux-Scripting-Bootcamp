@@ -1,3 +1,5 @@
-📝 Ejercicio 09 - Bloque 09
+📝 Ejercicio 09 - Tamaño Total de Logs
 
-Descripción detallada del ejercicio 9 del bloque 09.
+- Suma el tamaño total de los archivos en /var/log
+- Imprime el tamaño total en MB con du
+- Redondea a 2 decimales

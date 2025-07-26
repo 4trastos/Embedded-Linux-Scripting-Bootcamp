@@ -1,3 +1,5 @@
-📝 Ejercicio 06 - Bloque 09
+📝 Ejercicio 06 - Detectar Shadow sin Permisos
 
-Descripción detallada del ejercicio 6 del bloque 09.
+- Verifica si /etc/shadow tiene permisos incorrectos
+- Debe ser legible solo por root (600)
+- Si no cumple, imprime "Permisos incorrectos"

@@ -1,3 +1,5 @@
-📝 Ejercicio 03 - Bloque 09
+📝 Ejercicio 03 - Detectar si es VM o Hardware
 
-Descripción detallada del ejercicio 3 del bloque 09.
+- Escribe un script que intente detectar si el sistema está corriendo sobre una máquina virtual o hardware físico.
+- Pistas: /sys/class/dmi/id/product_name, dmidecode, lscpu
+- Solo usa herramientas disponibles en BusyBox si es posible

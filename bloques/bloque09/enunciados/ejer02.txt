@@ -1,3 +1,6 @@
-📝 Ejercicio 02 - Bloque 09
+📝 Ejercicio 02 - Verificar Puerto en Uso
 
-Descripción detallada del ejercicio 2 del bloque 09.
+- Escribe un script que reciba un número de puerto como argumento y verifique si está en uso.
+- Usa netstat o ss
+- Si está en uso, muestra "En uso", si no, muestra "Libre"
+

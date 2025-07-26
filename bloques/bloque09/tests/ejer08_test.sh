@@ -1,7 +1,7 @@
 #!/bin/sh
 output=$("$1")
-if [ "$output" = "Expected output for ejer08" ]; then
+if echo "$output" | grep -q "El sistema lleva activo"; then
     echo "✅ PASS"
 else
-    echo "❌ FAIL: Esperado 'Expected output for ejer08', obtuviste '$output'"
+    echo "❌ FAIL: El mensaje no contiene 'El sistema lleva activo'"
 fi

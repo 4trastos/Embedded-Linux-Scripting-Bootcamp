@@ -1,7 +1,18 @@
 #!/bin/sh
-output=$("$1")
-if [ "$output" = "Expected output for ejer04" ]; then
+tmp_json=$(mktemp)
+tmp_yaml=$(mktemp)
+
+echo '{"nombre":"Juan","edad":30}' > "$tmp_json"
+
+"$1" "$tmp_json" "$tmp_yaml"
+exit_code=$?
+
+if [ $exit_code -ne 0 ]; then
+    echo "❌ FAIL: El script falló al ejecutarse (exit code $exit_code)"
+elif grep -q "nombre: Juan" "$tmp_yaml" && grep -q "edad: 30" "$tmp_yaml"; then
     echo "✅ PASS"
 else
-    echo "❌ FAIL: Esperado 'Expected output for ejer04', obtuviste '$output'"
+    echo "❌ FAIL: El archivo YAML no contiene los valores esperados"
 fi
+
+rm -f "$tmp_json" "$tmp_yaml"

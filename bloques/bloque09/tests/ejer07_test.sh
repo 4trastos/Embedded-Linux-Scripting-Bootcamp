@@ -1,7 +1,7 @@
 #!/bin/sh
-output=$("$1")
-if [ "$output" = "Expected output for ejer07" ]; then
+output=$("$1" 2>/dev/null)
+if echo "$output" | grep -Eq "^\w+:"; then
     echo "✅ PASS"
 else
-    echo "❌ FAIL: Esperado 'Expected output for ejer07', obtuviste '$output'"
+    echo "❌ FAIL: No se detectaron comandos por usuario"
 fi

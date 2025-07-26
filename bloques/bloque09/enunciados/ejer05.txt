@@ -1,3 +1,5 @@
-📝 Ejercicio 05 - Bloque 09
+📝 Ejercicio 05 - Verificar Usuarios Duplicados
 
-Descripción detallada del ejercicio 5 del bloque 09.
+- Crea un script que detecte si hay usuarios duplicados en /etc/passwd
+- Basado en nombres de usuario
+- Imprime los nombres duplicados (si hay)

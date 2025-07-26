@@ -1,3 +1,4 @@
-📝 Ejercicio 08 - Bloque 09
+📝 Ejercicio 08 - Tiempo Activo del Sistema
 
-Descripción detallada del ejercicio 8 del bloque 09.
+- Muestra el tiempo que el sistema lleva encendido (uptime)
+- Muestra en formato amigable: "El sistema lleva activo X días Y horas Z minutos"

@@ -1,7 +1,7 @@
 #!/bin/sh
 output=$("$1")
-if [ "$output" = "Expected output for ejer03" ]; then
+if echo "$output" | grep -Eiq "vm|virtual|hardware|baremetal"; then
     echo "✅ PASS"
 else
-    echo "❌ FAIL: Esperado 'Expected output for ejer03', obtuviste '$output'"
+    echo "❌ FAIL: La salida debe indicar si es una máquina virtual o física. Obtuviste: '$output'"
 fi

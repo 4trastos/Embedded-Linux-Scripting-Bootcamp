@@ -1,3 +1,5 @@
-📝 Ejercicio 04 - Bloque 09
+📝 Ejercicio 04 - Convertir JSON a YAML
 
-Descripción detallada del ejercicio 4 del bloque 09.
+- Escribe un script que convierta un archivo .json en .yaml.
+- Usa jq y yq si están disponibles
+- Detecta si faltan y da mensaje de error claro

@@ -1,3 +1,5 @@
-📝 Ejercicio 07 - Bloque 09
+📝 Ejercicio 07 - Historial de Comandos por Usuario
 
-Descripción detallada del ejercicio 7 del bloque 09.
+- Muestra el último comando ejecutado por cada usuario con shell activa (/bin/sh, /bin/bash)
+- Usa archivos .bash_history, .sh_history, etc.
+- Pide permisos adecuados

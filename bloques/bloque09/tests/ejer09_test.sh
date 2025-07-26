@@ -1,7 +1,7 @@
 #!/bin/sh
 output=$("$1")
-if [ "$output" = "Expected output for ejer09" ]; then
+if echo "$output" | grep -qE '^[0-9]+(\.[0-9]{1,2})? MB$'; then
     echo "✅ PASS"
 else
-    echo "❌ FAIL: Esperado 'Expected output for ejer09', obtuviste '$output'"
+    echo "❌ FAIL: El formato debe ser 'X.YY MB'. Salida obtenida: '$output'"
 fi
