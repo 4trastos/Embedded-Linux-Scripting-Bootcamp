@@ -1,7 +1,8 @@
 #!/bin/sh
-output=$("$1")
-if [ "$output" = "Expected output for ejer04" ]; then
+
+output=$("$1" root)
+if echo "$output" | grep -q "Usuario encontrado"; then
     echo "✅ PASS"
 else
-    echo "❌ FAIL: Esperado 'Expected output for ejer04', obtuviste '$output'"
+    echo "❌ FAIL: El usuario 'root' debería existir en /etc/passwd"
 fi

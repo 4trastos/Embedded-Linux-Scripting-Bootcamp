@@ -1,7 +1,16 @@
 #!/bin/sh
-output=$("$1")
-if [ "$output" = "Expected output for ejer10" ]; then
+
+src=$(mktemp -d)
+dst=$(mktemp -d)
+echo "config A" > "$src/a.conf"
+echo "config B" > "$src/b.conf"
+
+"$1" "$src" "$dst"
+
+if [ -f "$dst/a.conf" ] && [ -f "$dst/b.conf" ]; then
     echo "✅ PASS"
 else
-    echo "❌ FAIL: Esperado 'Expected output for ejer10', obtuviste '$output'"
+    echo "❌ FAIL: Los archivos .conf no fueron copiados correctamente"
 fi
+
+rm -r "$src" "$dst"

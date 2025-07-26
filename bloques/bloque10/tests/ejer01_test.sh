@@ -1,7 +1,10 @@
 #!/bin/sh
+
 output=$("$1")
-if [ "$output" = "Expected output for ejer01" ]; then
+if echo "$output" | grep -q "Conectividad con 8.8.8.8 confirmada"; then
     echo "✅ PASS"
+elif echo "$output" | grep -q "No se pudo establecer conexión"; then
+    echo "✅ PASS (sin conexión)"
 else
-    echo "❌ FAIL: Esperado 'Expected output for ejer01', obtuviste '$output'"
+    echo "❌ FAIL: No se detectó un mensaje válido de conectividad"
 fi

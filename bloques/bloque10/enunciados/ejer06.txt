@@ -1,3 +1,6 @@
-📝 Ejercicio 06 - Bloque 10
+📝 Ejercicio 06 - Monitorear Cambios de un Archivo
 
-Descripción detallada del ejercicio 6 del bloque 10.
+- Crea un script que imprima un mensaje si un archivo ha sido modificado desde la última vez.
+- Recibe el path al archivo como argumento
+- Guarda la fecha del último stat en un archivo temporal
+- Usa stat y date de BusyBox

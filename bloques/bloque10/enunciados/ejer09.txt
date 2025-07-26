@@ -1,3 +1,6 @@
-📝 Ejercicio 09 - Bloque 10
+📝 Ejercicio 09 - Validar Formato de IP
 
-Descripción detallada del ejercicio 9 del bloque 10.
+- Crea un script que reciba una IP y verifique que tenga formato válido (X.X.X.X).
+- No valida rangos, solo estructura
+- Imprime "Formato válido" o "Formato inválido"
+- Usa solo BusyBox (expr, cut, wc, etc.)

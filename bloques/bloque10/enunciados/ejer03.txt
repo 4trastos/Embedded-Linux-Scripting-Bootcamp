@@ -1,3 +1,6 @@
-📝 Ejercicio 03 - Bloque 10
+📝 Ejercicio 03 - Contador de Palabras en Archivos
 
-Descripción detallada del ejercicio 3 del bloque 10.
+- Haz un script que cuente el número de palabras de todos los archivos .txt en un directorio dado.
+- Recibe el directorio como argumento
+- Imprime el total de palabras encontradas
+- Usa wc, find o ls, solo BusyBox

@@ -1,3 +1,5 @@
-📝 Ejercicio 07 - Bloque 10
+📝 Ejercicio 07 - Simulador de Uptime
 
-Descripción detallada del ejercicio 7 del bloque 10.
+- Crea un script que imprima cuánto tiempo lleva corriendo el sistema en formato humano.
+- Usa /proc/uptime y muestra los minutos redondeados
+- Ejemplo:  "🕒 El sistema lleva encendido 53 minutos"

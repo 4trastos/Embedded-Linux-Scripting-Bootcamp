@@ -1,3 +1,6 @@
-📝 Ejercicio 02 - Bloque 10
+📝 Ejercicio 02 - Listar Dispositivos de Bloque
 
-Descripción detallada del ejercicio 2 del bloque 10.
+- Crea un script que muestre todos los dispositivos de bloque (/dev) usando BusyBox.
+- Solo muestra los que comienzan con sd o mmc
+- Usa ls y grep de BusyBox
+- Ejemplo de salida: /dev/sda, /dev/mmcblk0

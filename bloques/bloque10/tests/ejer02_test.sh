@@ -1,7 +1,8 @@
 #!/bin/sh
+
 output=$("$1")
-if [ "$output" = "Expected output for ejer02" ]; then
+if echo "$output" | grep -Eq "/dev/(sd|mmc)"; then
     echo "✅ PASS"
 else
-    echo "❌ FAIL: Esperado 'Expected output for ejer02', obtuviste '$output'"
+    echo "❌ FAIL: No se encontraron dispositivos de bloque esperados (/dev/sd* o /dev/mmc*)"
 fi

@@ -1,3 +1,6 @@
-📝 Ejercicio 10 - Bloque 10
+📝 Ejercicio 10 - Script de Backup de Archivos .conf
 
-Descripción detallada del ejercicio 10 del bloque 10.
+- Crea un script que copie todos los archivos .conf de un directorio a otro.
+- Recibe dos argumentos: origen y destino
+- Verifica que ambos existen
+- Usa cp y BusyBox utilities

@@ -1,7 +1,9 @@
 #!/bin/sh
+
 output=$("$1")
-if [ "$output" = "Expected output for ejer07" ]; then
+
+if echo "$output" | grep -Eq "encendido [0-9]+ minutos"; then
     echo "✅ PASS"
 else
-    echo "❌ FAIL: Esperado 'Expected output for ejer07', obtuviste '$output'"
+    echo "❌ FAIL: El formato debe ser 'El sistema lleva encendido X minutos'"
 fi

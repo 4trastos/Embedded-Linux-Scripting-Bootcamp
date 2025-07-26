@@ -1,3 +1,10 @@
-📝 Ejercicio 05 - Bloque 10
+📝 Ejercicio 05 - Script Multitarea con sleep
 
-Descripción detallada del ejercicio 5 del bloque 10.
+- Crea un script que inicie 3 tareas en paralelo con & y luego espere a todas con wait.
+- Cada tarea imprime su nombre y duerme 2 segundos
+- Usa sleep de BusyBox
+- Ejemplo:
+    
+    Tarea 1 iniciada
+    Tarea 2 iniciada
+    Tarea 3 iniciada

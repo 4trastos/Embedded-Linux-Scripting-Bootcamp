@@ -1,3 +1,6 @@
-📝 Ejercicio 08 - Bloque 10
+📝 Ejercicio 08 - Análisis de Logs Simple
 
-Descripción detallada del ejercicio 8 del bloque 10.
+- Crea un script que cuente cuántas líneas contienen la palabra error en un archivo de log.
+- Recibe el archivo como argumento
+- Imprime: "Se encontraron X errores"
+- Usa grep -c error (BusyBox)

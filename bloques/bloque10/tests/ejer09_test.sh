@@ -1,7 +1,10 @@
 #!/bin/sh
-output=$("$1")
-if [ "$output" = "Expected output for ejer09" ]; then
+
+output1=$("$1" 192.168.0.1)
+output2=$("$1" abc.def.ghi.jkl)
+
+if echo "$output1" | grep -q "Formato válido" && echo "$output2" | grep -q "Formato inválido"; then
     echo "✅ PASS"
 else
-    echo "❌ FAIL: Esperado 'Expected output for ejer09', obtuviste '$output'"
+    echo "❌ FAIL: La validación del formato IP no funciona correctamente"
 fi

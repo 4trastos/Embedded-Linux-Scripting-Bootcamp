@@ -1,3 +1,6 @@
-📝 Ejercicio 04 - Bloque 10
+📝 Ejercicio 04 - Verificar Usuario en /etc/passwd
 
-Descripción detallada del ejercicio 4 del bloque 10.
+- Crea un script que verifique si un usuario dado existe en /etc/passwd.
+- Recibe un nombre de usuario como argumento
+- Si existe, imprime: "✅ Usuario encontrado"
+- Si no, imprime: "❌ Usuario no encontrado"

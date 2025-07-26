@@ -1,3 +1,7 @@
-📝 Ejercicio 01 - Bloque 10
+📝 Ejercicio 01 - BusyBox Ping Check
 
-Descripción detallada del ejercicio 1 del bloque 10.
+- Crea un script que use ping (BusyBox) para verificar si 8.8.8.8 está accesible.
+- Si está accesible, imprime: "✅ Conectividad con 8.8.8.8 confirmada"
+- Si no, imprime: "❌ No se pudo establecer conexión"
+- Usa solo BusyBox (no timeout, ni grep, ni awk)
+
