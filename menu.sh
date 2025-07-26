@@ -28,18 +28,16 @@ while true; do
         "Scripting avanzado en entornos BusyBox"
     )
 
-    # Mostrar bloques
+    # Mostrar bloques disponibles (modo progresivo)
     for i in $(seq 1 10); do
         bloque_dir="bloques/bloque$(printf "%02d" $i)"
         unlock_file="$bloque_dir/unlock_code.txt"
         estado="🔒 Bloque bloqueado"
 
-        # Desbloqueo: el primero está siempre abierto
         if [ "$i" -eq 1 ] || [ -f "$unlock_file" ]; then
             estado="✅ Disponible"
         fi
 
-        # Progreso actual
         progreso=""
         progreso_file="$bloque_dir/.progreso.tmp"
         if [ -f "$progreso_file" ]; then
@@ -51,12 +49,50 @@ while true; do
     done
 
     echo ""
-    read -p "Selecciona un bloque [1-10] o pulsa ENTER para salir: " opcion
+    echo "[L] Modo libre (sin bloqueo, puedes acceder a cualquier bloque)"
+    echo ""
+    read -p "Selecciona un bloque [1-10], L para modo libre, o ENTER para salir: " opcion
 
     # Salida si se presiona ENTER sin opción
     [ -z "$opcion" ] && echo "Hasta luego 👋" && exit 0
 
-    # Validar que es número entre 1 y 10
+    # MODO LIBRE
+    if [[ "$opcion" =~ ^[Ll]$ ]]; then
+        while true; do
+            clear
+            echo "========================================"
+            echo "🧠 Embedded Linux Scripting Bootcamp"
+            echo "=== 🆓 MODO LIBRE ACTIVADO ==="
+            echo ""
+            echo "Puedes explorar cualquier bloque sin restricciones."
+            echo "⚠️ El progreso no se guarda en este modo."
+            echo ""
+
+            for i in $(seq 1 10); do
+                echo "[$i] Bloque $i - ${descripciones[$((i - 1))]} ✅ Disponible"
+            done
+            echo "[B] Volver al menú principal"
+            echo ""
+            read -p "Selecciona un bloque libre: " libre_opcion
+
+            if [[ "$libre_opcion" =~ ^[1-9]$|^10$ ]]; then
+                bloque_path="bloques/bloque$(printf "%02d" "$libre_opcion")"
+                echo ""
+                echo "Ejecutando Bloque $libre_opcion en modo libre..."
+                sleep 1
+                "$bloque_path/run_bloque.sh" --libre
+                read -p "Pulsa ENTER para volver al modo libre..."
+            elif [[ "$libre_opcion" =~ ^[Bb]$ ]]; then
+                break
+            else
+                echo "❌ Opción inválida. Intenta de nuevo."
+                sleep 1.5
+            fi
+        done
+        continue
+    fi
+
+    # Validar que es un número entre 1 y 10
     if ! [[ "$opcion" =~ ^[1-9]$|^10$ ]]; then
         echo "❌ Opción no válida. Intenta nuevamente."
         sleep 1.5
@@ -66,7 +102,7 @@ while true; do
     bloque_path="bloques/bloque$(printf "%02d" "$opcion")"
     unlock_path="$bloque_path/unlock_code.txt"
 
-    # Comprobar si desbloqueado
+    # Comprobar si está desbloqueado
     if [ "$opcion" = "1" ] || [ -f "$unlock_path" ]; then
         echo ""
         echo "Ejecutando Bloque $opcion..."
