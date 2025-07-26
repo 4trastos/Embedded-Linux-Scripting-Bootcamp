@@ -3,4 +3,4 @@
 Crea un script que liste solo los archivos ocultos en el directorio actual.
 
 - Usa `ls` con los flags adecuados
-- Debe comenzar con `#!/bin/sh`
+- Debe comenzar con `#!/bin/bash`

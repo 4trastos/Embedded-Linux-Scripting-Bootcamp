@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 out=$("$1")
 expected="1
 2

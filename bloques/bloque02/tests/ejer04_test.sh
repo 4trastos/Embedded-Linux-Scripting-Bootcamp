@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 testfile="tests/ejer04_test_file.txt"
 echo -e "Linea 1\nLinea 2\nLinea 3" > "$testfile"
 output=$("$1" "$testfile")

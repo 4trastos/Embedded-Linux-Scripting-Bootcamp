@@ -4,4 +4,4 @@ Escribe un script que imprima los números del 1 al 5, uno por línea.
 
 - Usa un bucle `for`
 - Usa `echo` para imprimir cada número
-- Empieza con `#!/bin/sh`
+- Empieza con `#!/bin/bash`

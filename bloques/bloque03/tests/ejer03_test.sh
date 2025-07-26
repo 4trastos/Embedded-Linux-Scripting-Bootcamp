@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 touch testfile1 testfile2
 mkdir testdir
 output=$("$1")

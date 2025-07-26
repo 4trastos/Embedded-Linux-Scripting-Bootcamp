@@ -3,4 +3,4 @@
 Crea un script que imprima el nombre del usuario actual que está ejecutando el script.
 
 - Usa el comando `whoami`
-- Debe comenzar con `#!/bin/sh`
+- Debe comenzar con `#!/bin/bash`

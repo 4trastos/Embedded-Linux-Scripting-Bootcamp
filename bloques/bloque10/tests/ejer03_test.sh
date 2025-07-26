@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 tmp_dir=$(mktemp -d)
 echo "Uno dos tres" > "$tmp_dir/a.txt"

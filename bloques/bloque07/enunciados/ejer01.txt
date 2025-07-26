@@ -6,4 +6,4 @@ Usa ps y grep o awk
 
 Muestra PID, nombre y estado del proceso
 
-Empieza con #!/bin/sh
+Empieza con #!/bin/bash

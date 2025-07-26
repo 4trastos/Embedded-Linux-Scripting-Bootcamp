@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 echo "line 1" > file1.txt
 echo "line 1\nline 2" > file2.txt
 output=$("$1")

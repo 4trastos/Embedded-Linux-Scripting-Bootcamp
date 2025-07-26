@@ -3,4 +3,4 @@
 Crea un script que imprima las primeras 3 líneas del archivo /etc/passwd.
 
 Usa el comando head
-Debe comenzar con #!/bin/sh
+Debe comenzar con #!/bin/bash

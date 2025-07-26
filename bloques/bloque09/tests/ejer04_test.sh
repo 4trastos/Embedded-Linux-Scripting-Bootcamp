@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 tmp_json=$(mktemp)
 tmp_yaml=$(mktemp)
 

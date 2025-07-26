@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 output=$("$1" | grep -c '=')
 if [ "$output" -gt 0 ]; then
     echo "✅ PASS"

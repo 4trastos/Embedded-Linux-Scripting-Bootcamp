@@ -3,4 +3,4 @@
 Crea un script que reciba un archivo como argumento y muestre si es ejecutable o no.
 
 - Usa condicionales y `[ -x archivo ]`
-- Debe comenzar con `#!/bin/sh`
+- Debe comenzar con `#!/bin/bash`

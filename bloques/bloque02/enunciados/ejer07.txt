@@ -3,4 +3,4 @@
 Crea un script que liste todas las variables de entorno disponibles.
 
 - Usa `printenv`
-- Debe comenzar con `#!/bin/sh`
+- Debe comenzar con `#!/bin/bash`

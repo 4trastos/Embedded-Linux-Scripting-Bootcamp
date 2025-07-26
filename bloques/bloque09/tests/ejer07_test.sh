@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 output=$("$1" 2>/dev/null)
 if echo "$output" | grep -Eq "^\w+:"; then
     echo "✅ PASS"

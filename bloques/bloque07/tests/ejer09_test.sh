@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 script=$1
 mkdir -p /tmp/backup_test

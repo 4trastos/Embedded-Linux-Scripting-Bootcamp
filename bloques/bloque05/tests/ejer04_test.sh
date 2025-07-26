@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 output=$("$1")
 expected=$(grep '/bin/bash' /etc/passwd)
 if [ "$output" = "$expected" ]; then

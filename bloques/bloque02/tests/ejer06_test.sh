@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 src="tests/ejer06_src.txt"
 dst="tests/ejer06_dst.txt"
 echo "Contenido de prueba" > "$src"

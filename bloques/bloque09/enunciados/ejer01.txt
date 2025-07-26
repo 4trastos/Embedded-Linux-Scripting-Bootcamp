@@ -2,5 +2,5 @@
 
 - Crea un script que muestre la fecha y hora actuales en formato: YYYY-MM-DD HH:MM:SS
 - Usa el comando date "+%F %T"
-- Comienza con #!/bin/sh
+- Comienza con #!/bin/bash
 

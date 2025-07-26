@@ -1,5 +1,5 @@
 # ejer02_test.sh
-#!/bin/sh
+#!/bin/bash
 group=$(id -gn "$USER")
 output=$("$1" "$USER")
 if [ "$output" = "$group" ]; then

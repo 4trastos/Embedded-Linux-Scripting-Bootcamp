@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 output=$("$1")
 if echo "$output" | grep -qE '^[0-9]+(\.[0-9]{1,2})? MB$'; then
     echo "✅ PASS"

@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 output=$("$1" rojo azul verde)
 expected="Argumentos: rojo azul verde"
 

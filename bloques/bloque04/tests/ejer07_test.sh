@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 "$1"
 if [ $? -eq 1 ]; then
     echo "✅ PASS"

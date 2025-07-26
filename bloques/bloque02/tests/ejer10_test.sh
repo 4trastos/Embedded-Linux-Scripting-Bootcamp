@@ -1,6 +1,6 @@
-#!/bin/sh
+#!/bin/bash
 file="tests/ejer10_test.sh"
-echo "#!/bin/sh" > "$file"
+echo "#!/bin/bash" > "$file"
 chmod +x "$file"
 output=$("$1" "$file")
 if echo "$output" | grep -q "ejecutable"; then

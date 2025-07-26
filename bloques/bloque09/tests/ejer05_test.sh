@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 # Simular entrada con duplicados
 output=$("$1" /etc/passwd 2>/dev/null)
 if [ $? -ne 0 ]; then

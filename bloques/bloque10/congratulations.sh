@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # Colores ANSI para una salida bonita
 GREEN='\033[0;32m'

@@ -3,4 +3,4 @@
 Crea un script que reciba el nombre de un directorio y lo cree solo si no existe.
 
 - Usa `mkdir` y condición para comprobar existencia
-- Debe comenzar con `#!/bin/sh`
+- Debe comenzar con `#!/bin/bash`

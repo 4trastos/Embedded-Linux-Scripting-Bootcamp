@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 dir="tests/test_dir"
 rm -rf "$dir"
 "$1" "$dir"

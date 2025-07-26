@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 output=$("$1" | sort)
 expected=$(ls -d .[^.]* | sort 2>/dev/null)
 if [ "$output" = "$expected" ]; then

@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 output=$("$1")
 if [ "$output" = "La suma es: 55" ]; then
     echo "✅ PASS"

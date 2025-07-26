@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 rm -f tempfile.txt
 "$1"
 if [ -f tempfile.txt ]; then

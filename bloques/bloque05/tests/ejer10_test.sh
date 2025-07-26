@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 cat <<EOF > input.txt
 uno
 uno

@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 output=$(echo "1" | "$1")
 if echo "$output" | grep -q "Decir Hola"; then
     echo "✅ PASS"

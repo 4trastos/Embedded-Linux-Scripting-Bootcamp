@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 output=$("$1")
 expected=$(date +%Y-%m-%d)
 if [ "$output" = "$expected" ]; then

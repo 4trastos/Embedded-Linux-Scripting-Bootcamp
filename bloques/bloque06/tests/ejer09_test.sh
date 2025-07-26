@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 rm -f lista.txt
 "$1"
 if [ -f lista.txt ] && [ -s lista.txt ]; then

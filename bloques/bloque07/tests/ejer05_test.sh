@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 script=$1
 logfile="/tmp/test_logfile.txt"

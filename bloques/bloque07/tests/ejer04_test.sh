@@ -1,9 +1,9 @@
-#!/bin/sh
+#!/bin/bash
 
 script=$1
 
 cat << 'EOF' > /tmp/fake_job.sh
-#!/bin/sh
+#!/bin/bash
 echo "Ejecución de trabajo simulada"
 EOF
 chmod +x /tmp/fake_job.sh

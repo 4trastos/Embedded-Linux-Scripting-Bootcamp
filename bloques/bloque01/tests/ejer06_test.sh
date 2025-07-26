@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 "$1" root
 [ $? -eq 0 ] || { echo "❌ FAIL: root debería existir"; exit; }
 

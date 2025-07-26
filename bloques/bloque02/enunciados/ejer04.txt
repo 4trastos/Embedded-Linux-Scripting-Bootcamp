@@ -4,4 +4,4 @@ Crea un script que reciba un nombre de archivo como argumento y muestre el núme
 
 - Usa `wc -l`
 - Debe comprobar que el archivo existe
-- Debe comenzar con `#!/bin/sh`
+- Debe comenzar con `#!/bin/bash`

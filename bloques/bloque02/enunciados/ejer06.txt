@@ -4,4 +4,4 @@ Crea un script que copie un archivo origen a destino, ambos pasados como argumen
 
 - Comprueba que el archivo origen existe
 - Usa `cp`
-- Debe comenzar con `#!/bin/sh`
+- Debe comenzar con `#!/bin/bash`

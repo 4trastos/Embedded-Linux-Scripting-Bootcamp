@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 touch testfile.tmp
 output=$("$1" testfile.tmp)
 rm testfile.tmp

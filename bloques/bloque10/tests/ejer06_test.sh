@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 tmp_file=$(mktemp)
 echo "test" > "$tmp_file"

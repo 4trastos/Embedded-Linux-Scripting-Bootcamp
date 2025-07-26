@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 output=$("$1")
 if echo "$output" | grep -q "Conectividad con 8.8.8.8 confirmada"; then

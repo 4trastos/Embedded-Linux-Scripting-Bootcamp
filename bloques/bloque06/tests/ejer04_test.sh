@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 rm -f error.log
 "$1"
 if [ -s error.log ]; then

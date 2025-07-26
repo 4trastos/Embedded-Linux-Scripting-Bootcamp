@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 input="hola mundo"
 output=$("$1" "$input")
 expected="HOLA MUNDO"

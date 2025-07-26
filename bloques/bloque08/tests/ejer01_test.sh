@@ -1,5 +1,5 @@
 # ejer01_test.sh
-#!/bin/sh
+#!/bin/bash
 "$1"
 if getent group embedded >/dev/null && id linuxuser | grep -q embedded; then
     echo "✅ PASS"

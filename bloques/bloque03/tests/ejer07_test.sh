@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 output1=$("$1")
 output2=$("$1" test)
 

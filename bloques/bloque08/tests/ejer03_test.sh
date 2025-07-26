@@ -1,5 +1,5 @@
 # ejer03_test.sh
-#!/bin/sh
+#!/bin/bash
 output=$("$1" "$USER")
 if echo "$output" | grep -q "$$"; then
     echo "✅ PASS"

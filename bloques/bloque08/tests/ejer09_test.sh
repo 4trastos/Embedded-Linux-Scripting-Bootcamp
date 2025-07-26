@@ -1,7 +1,7 @@
 # ejer09_test.sh
-#!/bin/sh
+#!/bin/bash
 mkdir -p /tmp/testdir_b8
-echo "#!/bin/sh" > /tmp/testdir_b8/test_script.sh
+echo "#!/bin/bash" > /tmp/testdir_b8/test_script.sh
 chmod 644 /tmp/testdir_b8/test_script.sh
 "$1" /tmp/testdir_b8
 perm=$(stat -c "%a" /tmp/testdir_b8/test_script.sh)

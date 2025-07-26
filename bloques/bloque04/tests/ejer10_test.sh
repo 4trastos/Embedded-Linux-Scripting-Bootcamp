@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 touch archivo_test.tmp
 "$1" ls | grep -q "archivo_test.tmp"
 res=$?

@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 cd "$(dirname "$0")"
 mkdir -p soluciones
@@ -30,7 +30,7 @@ while [ $passed -lt 10 ]; do
     fi
 
     # Crear archivo si no existe
-    [ ! -f "$script" ] && echo "#!/bin/sh" > "$script" && chmod +x "$script"
+    [ ! -f "$script" ] && echo "#!/bin/bash" > "$script" && chmod +x "$script"
     
     vim "$script"
 

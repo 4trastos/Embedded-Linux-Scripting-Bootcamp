@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 script=$1
 fake_url="https://example.com/fake.sh"

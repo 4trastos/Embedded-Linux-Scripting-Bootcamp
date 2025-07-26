@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 output=$("$1" uno dos tres)
 expected="Número de argumentos: 3"
 

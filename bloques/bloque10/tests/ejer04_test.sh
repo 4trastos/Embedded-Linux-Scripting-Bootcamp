@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 output=$("$1" root)
 if echo "$output" | grep -q "Usuario encontrado"; then

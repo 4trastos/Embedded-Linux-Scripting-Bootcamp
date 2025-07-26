@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 output=$("$1")
 expected=$(head -n 3 /etc/passwd)
 if [ "$output" = "$expected" ]; then

@@ -1,5 +1,5 @@
 # ejer08_test.sh
-#!/bin/sh
+#!/bin/bash
 output=$("$1")
 if [ "$(whoami)" = "root" ]; then
     if echo "$output" | grep -qi "alerta"; then

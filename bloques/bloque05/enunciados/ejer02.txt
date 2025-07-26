@@ -4,4 +4,4 @@ Crea un script que imprima cuántas líneas tiene el archivo /etc/passwd.
 
 Usa wc -l
 El resultado debe ser solo el número, sin texto adicional
-El script debe comenzar con #!/bin/sh
+El script debe comenzar con #!/bin/bash

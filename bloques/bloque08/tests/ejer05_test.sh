@@ -1,5 +1,5 @@
 # ejer05_test.sh
-#!/bin/sh
+#!/bin/bash
 touch /tmp/test_file
 output=$("$1")
 if echo "$output" | grep -q "test_file"; then

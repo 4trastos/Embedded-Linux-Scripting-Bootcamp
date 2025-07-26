@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 output=$("$1")
 expected="1\n2\n3\n4\n5"
 if [ "$(printf "%s" "$output")" = "$(printf "%b" "$expected")" ]; then

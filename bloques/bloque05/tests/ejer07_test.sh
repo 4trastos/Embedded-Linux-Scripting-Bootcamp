@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 echo "linux embedded" > input.txt
 output=$("$1")
 expected="LINUX EMBEDDED"

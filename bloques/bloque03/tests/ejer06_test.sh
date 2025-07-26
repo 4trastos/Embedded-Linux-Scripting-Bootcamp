@@ -1,14 +1,14 @@
-#!/bin/sh
+#!/bin/bash
 mkdir temp && cd temp
 cat > funciones.sh <<EOF
-#!/bin/sh
+#!/bin/bash
 mostrar_fecha() {
     date +%Y-%m-%d
 }
 EOF
 
 cat > principal.sh <<EOF
-#!/bin/sh
+#!/bin/bash
 . ./funciones.sh
 mostrar_fecha
 EOF

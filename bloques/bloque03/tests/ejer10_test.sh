@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 output=$("$1")
 if [ "$output" = "Factorial de 5 es: 120" ]; then
     echo "✅ PASS"

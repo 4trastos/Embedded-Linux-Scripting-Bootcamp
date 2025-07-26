@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 output=$("$1")
 expected="Permisos correctos"
 if echo "$output" | grep -Eq "Permisos correctos|Permisos incorrectos"; then

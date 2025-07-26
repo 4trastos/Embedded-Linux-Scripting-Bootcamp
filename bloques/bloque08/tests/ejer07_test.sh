@@ -1,5 +1,5 @@
 # ejer07_test.sh
-#!/bin/sh
+#!/bin/bash
 output=$("$1" | head -n 5)
 if [ -n "$output" ]; then
     echo "✅ PASS"

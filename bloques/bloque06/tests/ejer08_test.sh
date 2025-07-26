@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 output=$("$1" 3)
 if echo "$output" | grep -q "0"; then
     echo "✅ PASS"

@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 log_file=$(mktemp)
 echo "Error de sistema" > "$log_file"

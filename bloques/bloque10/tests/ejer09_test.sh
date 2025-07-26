@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 output1=$("$1" 192.168.0.1)
 output2=$("$1" abc.def.ghi.jkl)

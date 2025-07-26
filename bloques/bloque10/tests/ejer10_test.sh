@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 src=$(mktemp -d)
 dst=$(mktemp -d)

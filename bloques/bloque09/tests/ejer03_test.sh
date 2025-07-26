@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 output=$("$1")
 if echo "$output" | grep -Eiq "vm|virtual|hardware|baremetal"; then
     echo "✅ PASS"

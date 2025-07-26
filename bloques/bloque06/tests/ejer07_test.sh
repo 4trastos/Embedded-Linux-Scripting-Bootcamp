@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 # Verifica si el script contiene uso de trap
 if grep -q "trap" "$1"; then
     echo "✅ PASS"

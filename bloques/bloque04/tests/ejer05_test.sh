@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 mkdir -p testdir
 output=$("$1" testdir)
 rm -r testdir

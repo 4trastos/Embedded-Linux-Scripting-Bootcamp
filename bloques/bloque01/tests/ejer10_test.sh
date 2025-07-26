@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 touch /tmp/testfile123
 "$1" /tmp/testfile123
 perm=$(stat -c "%a" /tmp/testfile123)
