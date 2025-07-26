@@ -1,4 +1,3 @@
-
 ````markdown
 # 🧠 Embedded Linux Scripting Bootcamp
 
@@ -11,7 +10,8 @@ Este proyecto contiene **100 ejercicios cuidadosamente diseñados** para ayudart
 La estructura está organizada en **10 bloques de 10 ejercicios**, que cubren desde lo más básico hasta técnicas más avanzadas de scripting.
 
 > 🎯 Cada bloque está diseñado como una pequeña "misión", que debes completar paso a paso.  
-> ✅ Solo puedes avanzar al siguiente bloque si completas correctamente el anterior.
+> ✅ Solo puedes avanzar al siguiente bloque si completas correctamente el anterior.  
+> 🔓 También puedes activar el **Modo Libre** si solo quieres practicar sin restricciones.
 
 ---
 
@@ -20,15 +20,17 @@ La estructura está organizada en **10 bloques de 10 ejercicios**, que cubren de
 ```bash
 embedded-linux-scripts/
 ├── menu.sh                     # Menú principal
-└── bloques/
-    ├── bloque01/
-    │   ├── enunciados/         # Enunciados de los ejercicios
-    │   ├── tests/              # Scripts de test automático
-    │   ├── soluciones/         # Tus soluciones (se generan al ejecutar)
-    │   └── run_bloque.sh       # Lógica interactiva del bloque
-    ├── bloque02/
-    ├── ...
-    └── bloque10/
+├── .progreso.tmp               # Progreso actual del usuario
+├── bloques/
+│   ├── bloque01/
+│   │   ├── enunciados/         # Enunciados de los ejercicios
+│   │   ├── tests/              # Scripts de test automático
+│   │   ├── soluciones/         # Tus soluciones (se generan al ejecutar)
+│   │   └── run_bloque.sh       # Lógica interactiva del bloque
+│   ├── bloque02/
+│   ├── ...
+│   └── bloque10/
+└── bloque11/                   # 🔥 Desafíos reales (contenido extra opcional)
 ````
 
 ---
@@ -49,12 +51,13 @@ Cada bloque cubre un conjunto progresivo de habilidades:
 | 08     | Funciones, modularización, reutilización               |
 | 09     | Señales, procesos, job control                         |
 | 10     | Integración y mini-proyectos                           |
+| 11     | 🔥 **Desafíos reales** *(opcional)*                    |
 
 ---
 
 ## 🛠 Requisitos
 
-* ✅ Linux o WSL
+* ✅ Linux o WSL (o QEMU si deseas simular hardware embebido)
 * ✅ Tener instalado: `bash`, `sh`, `coreutils`
 * ✅ Tener instalado **Vim** (imprescindible para editar los ejercicios):
 
@@ -92,11 +95,41 @@ chmod +x menu.sh
 
 ---
 
+## 🔓 Modo Libre (sin bloqueos)
+
+Si quieres practicar sin restricciones, ejecuta:
+
+```bash
+export BOOTCAMP_MODE=free
+./menu.sh
+```
+
+O ejecuta un bloque directamente en modo libre:
+
+```bash
+cd bloques/bloque06
+export BOOTCAMP_MODE=free
+./run_bloque.sh
+```
+
+---
+
 ## 📈 Progreso y Desbloqueo
 
 * Cada bloque finalizado te da un **código de desbloqueo automático**
-* Los progresos se guardan automáticamente
+* Los progresos se guardan automáticamente en `.progreso.tmp`
 * Puedes consultar tu progreso desde el menú principal
+
+---
+
+## 🧑‍💻 GitHub Codespaces (opcional)
+
+Este repositorio es compatible con GitHub Codespaces. Puedes probarlo sin instalar nada, desde el navegador:
+
+1. Ve a [tu fork del repositorio](https://github.com/4trastos/Embedded-Linux-Scripting-Bootcamp)
+2. Haz clic en **`Code > Codespaces > Create codespace on main`**
+3. Espera a que cargue el entorno
+4. Abre una terminal y ejecuta `./menu.sh`
 
 ---
 
@@ -137,6 +170,7 @@ The content is structured into **10 blocks with 10 exercises each**, progressing
 
 > 🎯 Each block is designed like a small "mission" to complete step by step.
 > ✅ You can only proceed to the next block after passing the current one.
+> 🔓 Or activate **Free Mode** to practice without restrictions.
 
 ---
 
@@ -145,15 +179,17 @@ The content is structured into **10 blocks with 10 exercises each**, progressing
 ```bash
 embedded-linux-scripts/
 ├── menu.sh                     # Main menu script
-└── bloques/
-    ├── bloque01/
-    │   ├── enunciados/         # Exercise descriptions
-    │   ├── tests/              # Automated test scripts
-    │   ├── soluciones/         # Your solutions (generated as you work)
-    │   └── run_bloque.sh       # Interactive logic of the block
-    ├── bloque02/
-    ├── ...
-    └── bloque10/
+├── .progreso.tmp               # Saved user progress
+├── bloques/
+│   ├── bloque01/
+│   │   ├── enunciados/         # Exercise descriptions
+│   │   ├── tests/              # Automated test scripts
+│   │   ├── soluciones/         # Your solutions (generated automatically)
+│   │   └── run_bloque.sh       # Interactive block logic
+│   ├── bloque02/
+│   ├── ...
+│   └── bloque10/
+└── bloque11/                   # 🔥 Real-world challenges (optional content)
 ```
 
 ---
@@ -174,13 +210,14 @@ Each block covers a progressive set of skills:
 | 08    | Functions, modularization, reuse                        |
 | 09    | Signals, processes, job control                         |
 | 10    | Integration and mini-projects                           |
+| 11    | 🔥 **Real-world challenges** *(optional)*               |
 
 ---
 
 ## 🛠 Requirements
 
-* ✅ Linux or WSL
-* ✅ Installed: `bash`, `sh`, `coreutils`
+* ✅ Linux or WSL (or QEMU if you want to simulate embedded hardware)
+* ✅ Tools: `bash`, `sh`, `coreutils`
 * ✅ You **must install Vim** (used to edit exercises):
 
 ```bash
@@ -217,11 +254,41 @@ chmod +x menu.sh
 
 ---
 
+## 🔓 Free Mode (no locks)
+
+To practice without restrictions, run:
+
+```bash
+export BOOTCAMP_MODE=free
+./menu.sh
+```
+
+Or execute a block directly:
+
+```bash
+cd bloques/bloque06
+export BOOTCAMP_MODE=free
+./run_bloque.sh
+```
+
+---
+
 ## 📈 Progress and Unlocking
 
-* Each completed block unlocks the next automatically
-* Progress is saved locally
-* You can view your progress from the main menu
+* Each completed block unlocks the next one automatically
+* Progress is saved in `.progreso.tmp`
+* The main menu shows your current completion status
+
+---
+
+## 🧑‍💻 GitHub Codespaces (optional)
+
+This repository works great on GitHub Codespaces. Try it online with no setup:
+
+1. Go to [your fork](https://github.com/4trastos/Embedded-Linux-Scripting-Bootcamp)
+2. Click **`Code > Codespaces > Create codespace on main`**
+3. Wait for the dev environment to load
+4. Open a terminal and run `./menu.sh`
 
 ---
 
@@ -229,7 +296,7 @@ chmod +x menu.sh
 
 Want to help?
 
-* Contribute new blocks or improve existing tests
+* Contribute new blocks or improve test scripts
 * Suggest new exercises or report bugs in [Issues](https://github.com/youruser/embedded-linux-scripts/issues)
 
 ---
@@ -243,3 +310,5 @@ Use it, share it, and level up your Linux scripting skills!
 
 **Happy hacking!**
 📬 Feel free to open an issue if you have questions or suggestions.
+
+```
