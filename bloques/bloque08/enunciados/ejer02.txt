@@ -1,3 +1,6 @@
-📝 Ejercicio 02 - Bloque 08
+📝 Ejercicio 02 - Verificar grupo de usuario
 
-Descripción detallada del ejercicio 2 del bloque 08.
+Escribe un script que:
+- Reciba un nombre de usuario como argumento
+- Imprima el grupo principal al que pertenece
+- Usa el comando `id` o `groups`

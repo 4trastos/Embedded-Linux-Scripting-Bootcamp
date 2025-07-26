@@ -1,3 +1,5 @@
-📝 Ejercicio 10 - Bloque 08
+📝 Ejercicio 10 - Usuarios con UID alto
 
-Descripción detallada del ejercicio 10 del bloque 08.
+Escribe un script que:
+- Liste todos los usuarios con UID mayor que 1000
+- Usa `awk`, `cut` y `/etc/passwd`

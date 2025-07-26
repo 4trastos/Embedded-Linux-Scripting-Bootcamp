@@ -1,3 +1,6 @@
-📝 Ejercicio 03 - Bloque 08
+📝 Ejercicio 03 - Mostrar procesos por usuario
 
-Descripción detallada del ejercicio 3 del bloque 08.
+Crea un script que:
+- Reciba como argumento un nombre de usuario
+- Liste todos los procesos que le pertenecen
+- Usa `ps` y `grep` o `pgrep`

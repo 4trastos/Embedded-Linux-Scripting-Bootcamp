@@ -1,7 +1,10 @@
+# ejer05_test.sh
 #!/bin/sh
+touch /tmp/test_file
 output=$("$1")
-if [ "$output" = "Expected output for ejer05" ]; then
+if echo "$output" | grep -q "test_file"; then
     echo "✅ PASS"
 else
-    echo "❌ FAIL: Esperado 'Expected output for ejer05', obtuviste '$output'"
+    echo "❌ FAIL: El archivo reciente no fue detectado"
 fi
+rm /tmp/test_file

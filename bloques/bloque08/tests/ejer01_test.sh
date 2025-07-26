@@ -1,7 +1,8 @@
+# ejer01_test.sh
 #!/bin/sh
-output=$("$1")
-if [ "$output" = "Expected output for ejer01" ]; then
+"$1"
+if getent group embedded >/dev/null && id linuxuser | grep -q embedded; then
     echo "✅ PASS"
 else
-    echo "❌ FAIL: Esperado 'Expected output for ejer01', obtuviste '$output'"
+    echo "❌ FAIL: No se detectó el grupo o el usuario"
 fi

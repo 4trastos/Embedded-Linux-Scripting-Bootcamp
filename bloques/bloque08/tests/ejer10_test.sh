@@ -1,7 +1,8 @@
+# ejer10_test.sh
 #!/bin/sh
 output=$("$1")
-if [ "$output" = "Expected output for ejer10" ]; then
+if echo "$output" | awk -F: '$3 > 1000' | grep -q .; then
     echo "✅ PASS"
 else
-    echo "❌ FAIL: Esperado 'Expected output for ejer10', obtuviste '$output'"
+    echo "❌ FAIL: No se listaron usuarios con UID > 1000"
 fi

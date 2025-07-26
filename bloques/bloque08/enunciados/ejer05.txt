@@ -1,3 +1,5 @@
-📝 Ejercicio 05 - Bloque 08
+📝 Ejercicio 05 - Archivos recientes en /tmp
 
-Descripción detallada del ejercicio 5 del bloque 08.
+Crea un script que:
+- Liste los archivos modificados en las últimas 24 horas en /tmp
+- Usa `find` y `-mtime`

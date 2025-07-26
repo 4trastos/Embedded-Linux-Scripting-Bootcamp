@@ -1,3 +1,7 @@
-📝 Ejercicio 01 - Bloque 08
+📝 Ejercicio 01 - Crear grupo y usuario
 
-Descripción detallada del ejercicio 1 del bloque 08.
+Crea un script que:
+- Cree un grupo llamado `embedded`
+- Cree un usuario llamado `linuxuser` asignado a ese grupo
+- Use `groupadd` y `useradd` (si existen)
+- Sea idempotente (no falle si ya existen)

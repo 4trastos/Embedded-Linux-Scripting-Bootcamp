@@ -1,7 +1,8 @@
+# ejer04_test.sh
 #!/bin/sh
 output=$("$1")
-if [ "$output" = "Expected output for ejer04" ]; then
+if echo "$output" | grep -q "$USER"; then
     echo "✅ PASS"
 else
-    echo "❌ FAIL: Esperado 'Expected output for ejer04', obtuviste '$output'"
+    echo "❌ FAIL: No aparece el usuario en el resultado"
 fi

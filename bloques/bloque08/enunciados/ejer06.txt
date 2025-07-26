@@ -1,3 +1,5 @@
-📝 Ejercicio 06 - Bloque 08
+📝 Ejercicio 06 - Usuarios conectados y su IP
 
-Descripción detallada del ejercicio 6 del bloque 08.
+Escribe un script que:
+- Liste los usuarios conectados actualmente y su IP
+- Usa `who`, `awk`, `cut` y `uniq`

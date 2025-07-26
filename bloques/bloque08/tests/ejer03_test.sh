@@ -1,7 +1,8 @@
+# ejer03_test.sh
 #!/bin/sh
-output=$("$1")
-if [ "$output" = "Expected output for ejer03" ]; then
+output=$("$1" "$USER")
+if echo "$output" | grep -q "$$"; then
     echo "✅ PASS"
 else
-    echo "❌ FAIL: Esperado 'Expected output for ejer03', obtuviste '$output'"
+    echo "❌ FAIL: No se detectaron procesos del usuario actual"
 fi

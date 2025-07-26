@@ -1,3 +1,6 @@
-📝 Ejercicio 09 - Bloque 08
+📝 Ejercicio 09 - Cambiar permisos en lote
 
-Descripción detallada del ejercicio 9 del bloque 08.
+Crea un script que:
+- Reciba un directorio
+- Cambie permisos de todos los archivos `.sh` a 755
+- Usa `find` y `chmod`

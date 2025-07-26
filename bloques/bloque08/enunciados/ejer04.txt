@@ -1,3 +1,5 @@
-📝 Ejercicio 04 - Bloque 08
+📝 Ejercicio 04 - Espacio usado por cada usuario
 
-Descripción detallada del ejercicio 4 del bloque 08.
+Escribe un script que:
+- Liste los usuarios y el espacio que ocupan en su directorio home
+- Usa `du`, `cut`, `sort` y `awk` si es necesario

@@ -1,3 +1,6 @@
-📝 Ejercicio 08 - Bloque 08
+📝 Ejercicio 08 - Alertar si hay root logueado
 
-Descripción detallada del ejercicio 8 del bloque 08.
+Escribe un script que:
+- Revise si el usuario `root` está conectado
+- Si es así, imprima una alerta en pantalla
+- Usa `who` o `users`

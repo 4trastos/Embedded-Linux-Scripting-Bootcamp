@@ -1,3 +1,5 @@
-📝 Ejercicio 07 - Bloque 08
+📝 Ejercicio 07 - Monitor de CPU por usuario
 
-Descripción detallada del ejercicio 7 del bloque 08.
+Crea un script que:
+- Muestre el consumo de CPU por usuario en tiempo real
+- Usa `top`, `ps` y `awk`

@@ -1,7 +1,9 @@
+# ejer02_test.sh
 #!/bin/sh
-output=$("$1")
-if [ "$output" = "Expected output for ejer02" ]; then
+group=$(id -gn "$USER")
+output=$("$1" "$USER")
+if [ "$output" = "$group" ]; then
     echo "✅ PASS"
 else
-    echo "❌ FAIL: Esperado 'Expected output for ejer02', obtuviste '$output'"
+    echo "❌ FAIL: Se esperaba '$group', se obtuvo '$output'"
 fi
