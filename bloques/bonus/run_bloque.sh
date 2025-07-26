@@ -59,7 +59,7 @@ while [ $passed -lt 10 ]; do
 done
 
 # Fin de bloque
-echo "🎉 ¡Has completado el Bloque 10!"
+echo "🎉 ¡Has completado el Bloque BONUS!"
 
 # Llama al script de felicitación
 ./congratulations.sh

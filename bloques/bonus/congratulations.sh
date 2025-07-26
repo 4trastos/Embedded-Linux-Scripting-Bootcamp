@@ -13,24 +13,24 @@ echo "╚═╝  ╚═╝╚══════╝╚═╝  ╚═══╝ ╚
 echo "======================================================================="
 echo "======================================================================="
 echo
-echo "¡FELICIDADES, MAESTRO DEL SCRIPTING!"
+echo "🎉 ¡HAS COMPLETADO LOS DESAFÍOS REALES DEL BONUS! 🎉"
 echo
-echo "Has completado con éxito el 'Embedded Linux Scripting Bootcamp'."
-echo "¡Los 100 ejercicios han sido conquistados!"
+echo "Has demostrado un dominio avanzado del shell scripting"
+echo "en situaciones realistas y complejas."
 echo
-echo "Tu dedicación y esfuerzo han dado sus frutos. Ahora posees una base sólida"
-echo "en shell scripting, una habilidad invaluable en el mundo del desarrollo"
-echo "de sistemas Linux embebidos."
+echo "Tu capacidad para resolver problemas y automatizar tareas te destaca"
+echo "como un verdadero hacker del Embedded Linux."
 echo
-echo "Recuerda que este es solo el comienzo. Sigue explorando,"
-echo "sigue aprendiendo y sigue construyendo."
+echo "Este Bonus era opcional, pero tú fuiste más allá. 💪"
+echo "¡Eso dice mucho sobre tu compromiso y pasión!"
 echo
-echo "¡El mundo del desarrollo embebido te espera!"
+echo "Recuerda que el aprendizaje nunca termina."
+echo "¡Sigue desafiándote y creando herramientas increíbles!"
 echo
 echo "======================================================================="
 echo "======================================================================="
 echo
-echo "¡Gracias por usar el Bootcamp!"
+echo "¡Gracias por completar el BONUS del Bootcamp!"
 echo
 
 sleep 3
