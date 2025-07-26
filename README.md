@@ -1,5 +1,3 @@
-# Embedded-Linux-Scripting-Bootcamp
----
 
 ````markdown
 # 🧠 Embedded Linux Scripting Bootcamp
@@ -46,7 +44,7 @@ Cada bloque cubre un conjunto progresivo de habilidades:
 | 03     | Condicionales (`if`, `else`, `test`)                   |
 | 04     | Argumentos y códigos de retorno                        |
 | 05     | Bucles (`for`, `while`, `until`)                       |
-| 06     | Manipulación de texto (cut, grep, awk)                 |
+| 06     | Manipulación de texto (`cut`, `grep`, `awk`)           |
 | 07     | Gestión de ficheros y directorios                      |
 | 08     | Funciones, modularización, reutilización               |
 | 09     | Señales, procesos, job control                         |
@@ -120,3 +118,134 @@ Este proyecto está bajo la licencia MIT.
 
 **¡Feliz aprendizaje!**
 📬 Si tienes dudas o sugerencias, no dudes en abrir una issue o contactarme.
+
+---
+
+---
+
+## 🌐 English Version
+
+# 🧠 Embedded Linux Scripting Bootcamp
+
+Welcome to the **Embedded Linux Scripting Bootcamp**, a progressive learning system to master Linux shell scripting focused on embedded systems.
+
+## 🚀 What is this?
+
+This project contains **100 carefully crafted exercises** to help you learn and master `sh` scripting in an embedded Linux environment.
+
+The content is structured into **10 blocks with 10 exercises each**, progressing from beginner to advanced scripting topics.
+
+> 🎯 Each block is designed like a small "mission" to complete step by step.
+> ✅ You can only proceed to the next block after passing the current one.
+
+---
+
+## 📦 Project Structure
+
+```bash
+embedded-linux-scripts/
+├── menu.sh                     # Main menu script
+└── bloques/
+    ├── bloque01/
+    │   ├── enunciados/         # Exercise descriptions
+    │   ├── tests/              # Automated test scripts
+    │   ├── soluciones/         # Your solutions (generated as you work)
+    │   └── run_bloque.sh       # Interactive logic of the block
+    ├── bloque02/
+    ├── ...
+    └── bloque10/
+```
+
+---
+
+## 🧩 What will you learn?
+
+Each block covers a progressive set of skills:
+
+| Block | Topic                                                   |
+| ----- | ------------------------------------------------------- |
+| 01    | Basics: `echo`, comments, permissions, script structure |
+| 02    | Variables, types, basic operations                      |
+| 03    | Conditionals (`if`, `else`, `test`)                     |
+| 04    | Arguments and return codes                              |
+| 05    | Loops (`for`, `while`, `until`)                         |
+| 06    | Text manipulation (`cut`, `grep`, `awk`)                |
+| 07    | File and directory management                           |
+| 08    | Functions, modularization, reuse                        |
+| 09    | Signals, processes, job control                         |
+| 10    | Integration and mini-projects                           |
+
+---
+
+## 🛠 Requirements
+
+* ✅ Linux or WSL
+* ✅ Installed: `bash`, `sh`, `coreutils`
+* ✅ You **must install Vim** (used to edit exercises):
+
+```bash
+sudo apt install vim
+```
+
+---
+
+## ▶️ How to use it
+
+1. **Clone the repository**:
+
+```bash
+git clone https://github.com/youruser/embedded-linux-scripts.git
+cd embedded-linux-scripts
+```
+
+2. **Make the menu script executable and run it**:
+
+```bash
+chmod +x menu.sh
+./menu.sh
+```
+
+3. **Explore the blocks**
+   The system will detect which blocks are unlocked and let you continue step by step.
+
+4. **Each exercise**:
+
+   * Shows the description
+   * Opens in `vim` when you press ENTER
+   * After saving and exiting, your solution is automatically tested
+   * If it passes, you proceed to the next exercise
+
+---
+
+## 📈 Progress and Unlocking
+
+* Each completed block unlocks the next automatically
+* Progress is saved locally
+* You can view your progress from the main menu
+
+---
+
+## 👥 Contributions
+
+Want to help?
+
+* Contribute new blocks or improve existing tests
+* Suggest new exercises or report bugs in [Issues](https://github.com/youruser/embedded-linux-scripts/issues)
+
+---
+
+## 📜 License
+
+This project is under the MIT License.
+Use it, share it, and level up your Linux scripting skills!
+
+---
+
+**Happy hacking!**
+📬 Feel free to open an issue if you have questions or suggestions.
+
+```
+
+---
+
+```
