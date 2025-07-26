@@ -243,9 +243,3 @@ Use it, share it, and level up your Linux scripting skills!
 
 **Happy hacking!**
 📬 Feel free to open an issue if you have questions or suggestions.
-
-```
-
----
-
-```
