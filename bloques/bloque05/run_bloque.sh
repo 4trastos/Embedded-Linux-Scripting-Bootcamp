@@ -45,6 +45,7 @@ while [ $passed -lt 10 ]; do
 
     echo ""
     echo "Corrigiendo tu solución..."
+    sleep 3
     chmod +x "$test_script"
     output=$("./$test_script" "./$script")
 

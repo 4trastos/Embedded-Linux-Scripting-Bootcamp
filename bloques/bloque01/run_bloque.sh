@@ -39,12 +39,26 @@ while [ $passed -lt 10 ]; do
     fi
 
     # Crear archivo si no existe
-    [ ! -f "$script" ] && echo "#!/bin/bash" > "$script" && chmod +x "$script"
-    
-    vim "$script"
+    if [ ! -f "$script" ]; then
+        {
+            echo "#!/bin/bash"
+            echo ""
+            echo "# 📝 Ayuda rápida de VIM:"
+            echo "# - i   👉 Modo Insertar"
+            echo "# - :w  👉 Guardar"
+            echo "# - :q  👉 Salir"
+            echo "# - :wq 👉 Guardar y salir"
+            echo "# - :q! 👉 Salir sin guardar"
+            echo ""
+        } > "$script"
+        chmod +x "$script"
+    fi
+
+    vim "+set number" "$script"
 
     echo ""
     echo "Corrigiendo tu solución..."
+    sleep 3
     chmod +x "$test_script"
     output=$("./$test_script" "./$script")
 
